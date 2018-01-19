@@ -1,0 +1,2 @@
+# github.io
+ooods.ru
