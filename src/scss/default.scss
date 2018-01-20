@@ -2,6 +2,7 @@
 @import "_variables";
 @import "_typography";
 @import "_nav";
+@import "_portfolio";
 
 body {
   color: $color-accent-main;
@@ -11,5 +12,5 @@ body {
 }
 
 .container {
-    width: 100%;
+  width: 100%;
 }

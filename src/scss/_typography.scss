@@ -9,6 +9,7 @@ h6 {
   text-transform: uppercase;
   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
+  color: $color-text-header;
 }
 
 a {
@@ -46,3 +47,26 @@ button,
     background-color: $color-accent-main-hover;
   }
 }
+
+section {
+  padding: 6rem 0;
+  h2.section-heading {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 2.6rem;
+  }
+  h3.section-subheading {
+    margin-bottom: 3.6rem;
+    text-transform: none;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 768px) {
+    section {
+      padding: 8rem 0;
+    }
+  }
