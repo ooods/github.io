@@ -1,14 +1,15 @@
+@import "./../../node_modules/bootstrap/scss/bootstrap";
+@import "_variables";
+
 body {
+  color: $color-accent-main;
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  webkit-tap-highlight-color: $color-accent-main;
 }
 
 .text-muted {
-  color: #777;
-}
-
-.text-primary {
-  color: #a41109;
+  color: $color-text-disabled;
 }
 
 p {
@@ -27,12 +28,12 @@ a {
   &.active {
     outline: 0;
   }
-  color: #a41109;
+  color: $color-accent-main;
   &:hover,
   &:focus,
   &:active,
   &.active {
-    color: #c72809;
+    color: $color-accent-main-hover;
   }
 }
 
@@ -60,26 +61,26 @@ h6 {
 }
 
 .btn-primary {
-  border-color: #a41109;
+  border-color: $color-accent-main;
   text-transform: uppercase;
   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   color: #fff;
-  background-color: #a41109;
+  background-color: $color-accent-main;
   &:hover,
   &:focus,
   &:active,
   &.active {
     border-color: #520d0d;
     color: #fff;
-    background-color: #c72809;
+    background-color: $color-accent-main-hover;
   }
 }
 
 .open .dropdown-toggle.btn-primary {
   border-color: #520d0d;
   color: #fff;
-  background-color: #c72809;
+  background-color: $color-accent-main-hover;
 }
 
 .btn-primary {
@@ -96,97 +97,97 @@ h6 {
 .btn-primary {
   &.disabled,
   &[disabled] {
-    border-color: #a41109;
-    background-color: #a41109;
+    border-color: $color-accent-main;
+    background-color: $color-accent-main;
   }
 }
 
 fieldset[disabled] .btn-primary {
-  border-color: #a41109;
-  background-color: #a41109;
+  border-color: $color-accent-main;
+  background-color: $color-accent-main;
 }
 
 .btn-primary {
   &.disabled:hover,
   &[disabled]:hover {
-    border-color: #a41109;
-    background-color: #a41109;
+    border-color: $color-accent-main;
+    background-color: $color-accent-main;
   }
 }
 
 fieldset[disabled] .btn-primary:hover {
-  border-color: #a41109;
-  background-color: #a41109;
+  border-color: $color-accent-main;
+  background-color: $color-accent-main;
 }
 
 .btn-primary {
   &.disabled:focus,
   &[disabled]:focus {
-    border-color: #a41109;
-    background-color: #a41109;
+    border-color: $color-accent-main;
+    background-color: $color-accent-main;
   }
 }
 
 fieldset[disabled] .btn-primary:focus {
-  border-color: #a41109;
-  background-color: #a41109;
+  border-color: $color-accent-main;
+  background-color: $color-accent-main;
 }
 
 .btn-primary {
   &.disabled:active,
   &[disabled]:active {
-    border-color: #a41109;
-    background-color: #a41109;
+    border-color: $color-accent-main;
+    background-color: $color-accent-main;
   }
 }
 
 fieldset[disabled] .btn-primary:active {
-  border-color: #a41109;
-  background-color: #a41109;
+  border-color: $color-accent-main;
+  background-color: $color-accent-main;
 }
 
 .btn-primary {
   &.disabled.active,
   &[disabled].active {
-    border-color: #a41109;
-    background-color: #a41109;
+    border-color: $color-accent-main;
+    background-color: $color-accent-main;
   }
 }
 
 fieldset[disabled] .btn-primary.active {
-  border-color: #a41109;
-  background-color: #a41109;
+  border-color: $color-accent-main;
+  background-color: $color-accent-main;
 }
 
 .btn-primary .badge {
-  color: #a41109;
+  color: $color-accent-main;
   background-color: #fff;
 }
 
 .btn-xl {
   padding: 20px 40px;
-  border-color: #a41109;
+  border-color: $color-accent-main;
   border-radius: 3px;
   text-transform: uppercase;
   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-weight: 700;
   color: #fff;
-  background-color: #a41109;
+  background-color: $color-accent-main;
   &:hover,
   &:focus,
   &:active,
   &.active {
     border-color: #520d0d;
     color: #fff;
-    background-color: #c72809;
+    background-color: $color-accent-main-hover;
   }
 }
 
 .open .dropdown-toggle.btn-xl {
   border-color: #520d0d;
   color: #fff;
-  background-color: #c72809;
+  background-color: $color-accent-main-hover;
 }
 
 .btn-xl {
@@ -203,70 +204,70 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl {
   &.disabled,
   &[disabled] {
-    border-color: #a41109;
-    background-color: #a41109;
+    border-color: $color-accent-main;
+    background-color: $color-accent-main;
   }
 }
 
 fieldset[disabled] .btn-xl {
-  border-color: #a41109;
-  background-color: #a41109;
+  border-color: $color-accent-main;
+  background-color: $color-accent-main;
 }
 
 .btn-xl {
   &.disabled:hover,
   &[disabled]:hover {
-    border-color: #a41109;
-    background-color: #a41109;
+    border-color: $color-accent-main;
+    background-color: $color-accent-main;
   }
 }
 
 fieldset[disabled] .btn-xl:hover {
-  border-color: #a41109;
-  background-color: #a41109;
+  border-color: $color-accent-main;
+  background-color: $color-accent-main;
 }
 
 .btn-xl {
   &.disabled:focus,
   &[disabled]:focus {
-    border-color: #a41109;
-    background-color: #a41109;
+    border-color: $color-accent-main;
+    background-color: $color-accent-main;
   }
 }
 
 fieldset[disabled] .btn-xl:focus {
-  border-color: #a41109;
-  background-color: #a41109;
+  border-color: $color-accent-main;
+  background-color: $color-accent-main;
 }
 
 .btn-xl {
   &.disabled:active,
   &[disabled]:active {
-    border-color: #a41109;
-    background-color: #a41109;
+    border-color: $color-accent-main;
+    background-color: $color-accent-main;
   }
 }
 
 fieldset[disabled] .btn-xl:active {
-  border-color: #a41109;
-  background-color: #a41109;
+  border-color: $color-accent-main;
+  background-color: $color-accent-main;
 }
 
 .btn-xl {
   &.disabled.active,
   &[disabled].active {
-    border-color: #a41109;
-    background-color: #a41109;
+    border-color: $color-accent-main;
+    background-color: $color-accent-main;
   }
 }
 
 fieldset[disabled] .btn-xl.active {
-  border-color: #a41109;
-  background-color: #a41109;
+  border-color: $color-accent-main;
+  background-color: $color-accent-main;
 }
 
 .btn-xl .badge {
-  color: #a41109;
+  color: $color-accent-main;
   background-color: #fff;
 }
 
@@ -275,13 +276,18 @@ fieldset[disabled] .btn-xl.active {
   background-color: #222;
   .navbar-brand {
     font-family: "PT Sans Narrow", sans-serif;
-    color: #a41109;
+    color: $color-accent-main;
     &:hover,
     &:focus,
     &:active,
     &.active {
-      color: #c72809;
+      color: $color-accent-main-hover;
     }
+  }
+  .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
   }
 }
 
@@ -317,14 +323,14 @@ fieldset[disabled] .btn-xl.active {
     border-color: rgba(255, 255, 255, 0.02);
   }
   .navbar-toggle {
-    border-color: #a41109;
-    background-color: #a41109;
+    border-color: $color-accent-main;
+    background-color: $color-accent-main;
     .icon-bar {
       background-color: #fff;
     }
     &:hover,
     &:focus {
-      background-color: #a41109;
+      background-color: $color-accent-main;
     }
   }
   .nav li a {
@@ -335,24 +341,24 @@ fieldset[disabled] .btn-xl.active {
     color: #fff;
   }
   &.navbar-shrink .nav li a {
-    color: #a41109;
+    color: $color-accent-main;
   }
   .nav li a {
     &:hover,
     &:focus {
       outline: 0;
       color: #fff;
-      background-color: #c72809;
+      background-color: $color-accent-main-hover;
     }
   }
   .navbar-nav > .active > a {
     border-radius: 0;
     color: #fff;
-    background-color: #a41109;
+    background-color: $color-accent-main;
     &:hover,
     &:focus {
       color: #fff;
-      background-color: #c72809;
+      background-color: $color-accent-main-hover;
     }
   }
 }
@@ -593,7 +599,7 @@ section {
       border-radius: 100%;
       text-align: center;
       color: #fff;
-      background-color: #a41109;
+      background-color: $color-accent-main;
       h4 {
         margin-top: 12px;
         font-size: 10px;
@@ -747,7 +753,7 @@ section {
     font-size: 16px;
     text-transform: none;
     font-weight: 400;
-    color: #777;
+    color: $color-text-disabled;
     margin-bottom: 0px;
     a {
       text-transform: none;
@@ -758,7 +764,7 @@ section {
     text-transform: none;
     font-style: italic;
     font-weight: 200;
-    color: #777;
+    color: $color-text-disabled;
     margin-bottom: 15px;
   }
   .report {
@@ -792,7 +798,7 @@ aside {
   }
   .heading {
     text-transform: none;
-    color: #777;
+    color: $color-text-disabled;
     margin-top: 20px;
     margin-bottom: -40px;
   }
@@ -820,7 +826,7 @@ section#contact {
     }
   }
   .form-control:focus {
-    border-color: #a41109;
+    border-color: $color-accent-main;
     box-shadow: none;
   }
   &::-webkit-input-placeholder,
@@ -877,7 +883,7 @@ ul.social-buttons {
     &:hover,
     &:focus,
     &:active {
-      background-color: #a41109;
+      background-color: $color-accent-main;
     }
   }
 }
@@ -963,7 +969,7 @@ ul.social-buttons {
 ::-moz-selection,
 ::selection {
   text-shadow: none;
-  background: #a41109;
+  background: $color-accent-main;
 }
 
 img {
@@ -971,8 +977,4 @@ img {
   &::-moz-selection {
     background: 0 0;
   }
-}
-
-body {
-  webkit-tap-highlight-color: #a41109;
 }

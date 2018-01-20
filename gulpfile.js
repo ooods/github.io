@@ -10,10 +10,16 @@ gulp.task("scss", function () {
         .pipe(autoprefixer({
             browsers: ["last 20 versions"]
         }))
-        .pipe(gulp.dest("themes/ooods/static/css"))
-})
+        .pipe(gulp.dest("themes/ooods/static/css"));
+});
+
+gulp.task("bootstrap", function () {
+    gulp.src("node_modules/bootstrap/dist/js/**/*.js")
+        .pipe(gulp.dest("themes/ooods/static/js/bootstrap"));
+});
 
 // Watch asset folder for changes
-gulp.task("watch", ["scss"], function () {
-    gulp.watch("src/scss/**/*", ["scss"])
-})
+gulp.task("watch", ["scss", "bootstrap"], function () {
+    gulp.watch("src/scss/**/*", ["scss"]);
+    gulp.watch("node_modules/bootstrap/dist/js/**/*", ["bootstrap"]);
+});
