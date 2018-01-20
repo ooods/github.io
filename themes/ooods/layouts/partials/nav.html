@@ -53,12 +53,6 @@
           </li>
         {{ end }}
 
-        {{ if .Site.Params.team.enable }}
-          <li>
-            <a class="page-scroll" href="{{ .Site.BaseURL }}#team">{{ with .Site.Params.navigation.team }}{{ . }}{{ end }}</a>
-          </li>
-        {{ end }}
-
         {{ if .Site.Params.contact.enable }}
           <li>
             <a class="page-scroll" href="{{ .Site.BaseURL }}#contact">{{ with .Site.Params.navigation.contact }}{{ . }}{{ end }}</a>

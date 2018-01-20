@@ -17,11 +17,11 @@
                 <i class="fa fa-plus fa-3x"></i>
               </div>
             </div>
-            {{ $url := printf "img/portfolio/%s" .preview }}
-            <img src="{{ $url | absURL }}" class="img-responsive" alt="">
+            {{ $url := printf "%s" .preview }}
+            <img src="{{ $url | absURL }}" class="img-responsive" alt="{{ .title | markdownify }}">
           </a>
           <div class="portfolio-caption">
-            <h4>{{ .title | markdownify }}</h4>
+            <h4>{{ .client | markdownify }}</h4>
             <p class="text-muted">{{ .category | markdownify }}</p>
           </div>
         </div>
