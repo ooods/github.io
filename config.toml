@@ -1,0 +1,346 @@
+# Site settings
+baseurl = "/"
+languageCode = "ru-ru"
+title = "«Деловое сотрудничество», продюсерский центр"
+theme = "ooods"
+
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = ""
+
+[params]
+  # You can use Markdown syntax for urls [text](//url.to/source) or
+  # most longer texts.
+  #
+  # All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+  # for more icons. The icons are represented by their corresponding
+  # CSS class.
+
+  # To provide some metadata for search engines feel free to add a few
+  # information about you and your website.
+  name = "Деловое сотрудничество"
+  description = "продюсерский центр «Деловое сотрудничество»"
+
+  # Link custom assets relative to /static
+  custom_css = []
+  custom_js  = []
+
+  # Possibility to disable external/additional fonts
+  # Exception: Fontawesome
+  disableFonts = false
+
+  # 404 error customization
+  [params.error404]
+    heading = "Page couldn't be found"
+    text = "Please visit [this page](/)"
+
+  # Optional piwik tracking
+  #[params.analytics.piwik]
+  #  URL = "https://stats.example.com"
+  #  ID = "42"
+  #  # Track all subdomains with "*.example.com"
+  #  domain = "www.example.com"
+  #  # Optional integrity check hash
+  #  hash = "sha512-RfeD0pacGTqy9m7U6PgehQfS4cc7SIt+e+P+H5e848kEvB/RW84CUGO3O4O3LNbxjevym6KPUZ8muPsMrI8WIw=="
+
+  # Navigation
+  [params.navigation]
+    brand = "продюсерский центр «Деловое сотрудничество»"
+    # Optional logo as brand stored in img/
+    logo = "ooods.min.svg"
+    services = "Услуги"
+    portfolio = "Портфолио"
+    about = "О нас"
+    contact = "Контакты"
+
+    # Add custom links. Those can be pre- and postpended to the default menu above.
+    # Use the weight attribute to order your custom links. Uncomment the example
+    # below and replace the values with your own.
+
+    # prepended links
+    #[[menu.prepend]]
+    #  url = "http://gohugo.io"
+    #  name = "Hugo"
+    #  weight = 10
+
+    # postpended links
+    # [[menu.postpend]]
+    #   url = "http://gohugo.io"
+    #   name = "External link"
+    #   weight = 10
+
+
+  # Hero section
+  [params.hero]
+    # To change the background image of the hero, replace 'header-bg.jpg' in
+    # the 'static/img' folder.
+    title = "продюсерский центр "
+    subtitle = "«Деловое сотрудничество»"
+    buttonText = "Далее"
+
+
+  # Services section
+  [params.services]
+    enable = true
+    title = "Услуги"
+    subtitle = "Lorem ipsum dolor sit amet consectetur."
+
+    [[params.services.row]]
+
+    [[params.services.row.list]]
+      icon = "fa-lock"
+      title = "ТВ"
+      description = "Производство ТВ-программ, Производство ТВ-сюжетов, Производство ТВ-рекламы."
+      url = "#"
+
+    [[params.services.row.list]]
+      icon = "fa-lock"
+      title = "Видео"
+      description = "Производство видеофильмов, Производство видеосъемок и монтаж видео, Производство видео для Интернет сайтов"
+      url = "#"
+
+    [[params.services.row.list]]
+      icon = "fa-lock"
+      title = "Аудио"
+      description = "Производство радиопрограмм. Производство аудиорекламы."
+      url = "#"
+
+    [[params.services.row.list]]
+      icon = "fa-lock"
+      title = "Веб ууслуги"
+      description = "Производство видео для Интернет сайтов, Создание и ведение Интернет-сайтов, СММ, СЕО"
+      url = "#"
+
+    [[params.services.row.list]]
+      icon = "fa-lock"
+      title = "Дизайн"
+      description = "Разработка логотипов. Создание и предпечатная подготовка графики"
+      url = "#"
+
+    [[params.services.row.list]]
+      icon = "fa-lock"
+      title = "Продвижение"
+      description = "Проведение комплексных рекламных кампаний. Проведение образовательных семинаров и тренингов по использованию рекламы."
+      url = "#"
+
+  # Portfolio section
+  [params.portfolio]
+    enable = true
+    # All projects defined in their own files. You can find example projects
+    # at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
+    # at the root of this Hugo site.
+    # For more informtion take a look at the README.
+    title = "Портфолио"
+    subtitle = "."
+
+    [params.portfolio.modal]
+      client = "Client"
+      date = "Date"
+      category = "Category"
+      buttonText = "Close project"
+
+
+    # About section
+  [params.about]
+    enable = true
+    title = "О нас"
+    subtitle = "Компания была организована в 1999 году группой журналистов, редакторов, режиссеров ТВ, работавших в то время на студии государственного телевидения. "
+    endpoint = "У нас серьезные планы на будущее!"
+
+    # The events will be listed from the top to the bottom.
+    # All images are stored under 'static/img/about'.
+    # Replace them with your own.
+    [[params.about.events]]
+      img = "1.jpg"
+      date = "1999"
+      title = "Автономная Некоммерческая Организация"
+      description = "Мы участвовали во многих социальных проектах, производили социальные рекламные видеоролики, снимали социальной тематики сюжеты и фильмы. "
+
+    [[params.about.events]]
+      img = "2.jpg"
+      date = "2002-2003"
+      title = "фильм «Эссенские контакты»"
+      description = "Два фильма о реабилитации страдающих хроническими психическими заболеваниями (фильм «Эссенские контакты» снимался нами в Германии по приглашению немецкой стороны в 2003 году)"
+
+    [[params.about.events]]
+      img = "3.jpg"
+      date = "2002 год"
+      title = "Фильм о наркомании для школьников"
+      description = "По инициативе «Делового сотрудничества» в 2002 году был снят фильм, предназначенный для родителей школьников, в котором рассказывалось о первых признаках наркотической зависимости. Этот фильм получил высокую оценку у врачей и педагогов, был рекомендован для показа в школах Нижегородской области. Наш «антинаркотический» видеоролик был удостоен первой премии на конкурсе социальной рекламы, проводимом Правительством Нижегородской области."
+
+    [[params.about.events]]
+      img = "4.jpg"
+      date = "2003-2005"
+      title = "«Таможенные вести», телеканал «Россия 24»"
+      description = "На протяжении двух лет мы выпускали в эфире телеканала «Вести 24» еженедельную программу «Таможенные вести» и были отмечены Первой премией, учрежденной Приволжским федеральным таможенным управлением."
+
+    [[params.about.events]]
+      img = "4.jpg"
+      date = "2005-2008"
+      title = "ПЦ «Деловое сотрудничество»"
+      description = "ПЦ «Деловое сотрудничество» являлось региональным вещателем Общественного Российского радио в Нижнем Новгороде. «ОРР в НН» на волне 106.4 FM — одна из немногих радиостанций в эфире Нижнего Новгорода, программы которой носили разговорный, а не чисто музыкальный характер. У нас была устойчивая аудитория, состоящая преимущественно из людей от 30 лет и старше."
+
+    [[params.about.events]]
+      img = "4.jpg"
+      date = "2008-2014"
+      title = " «Социальные вести»"
+      description = "«Деловое сотрудничество» выпускает программу «Социальные вести» (часть программ — по заказу Правительства Нижегородской области). Задачи программы — информировать зрителей о важнейших событиях в социальной сфере региона. Разъяснять положения важнейших законов, знания которых позволяют улучшить жизнь людей. Отвечать на возникающие у зрителей вопросы, привлекая соответствующих чиновников и специалистов. Разъяснять зрителям их права и обязанности в социальной сфере (трудовое законодательство, семейный кодекс, пенсионное законодательство и др.)."
+
+    [[params.about.events]]
+      img = "4.jpg"
+      date = "с 2014 года"
+      title = "Развитием телевизионного направления"
+      description = "У нас есть серьезные планы на будущее. Прежде всего, они связаны с развитием телевизионного направления нашей деятельности. Один из крупных и пока не осуществленных проектов — создание полноценной студии документальных фильмов."
+
+
+  # Team section
+  [params.team]
+    enable = true
+    # Possibility to center items
+    #center = true
+    title = "Наша комманда"
+    subtitle = "."
+    description = "."
+
+    # All team member's pictures are stored under 'static/img/team'.
+    # Replace them with your own too.
+    # Suggestion: Image size should be at least 360px*360px or the alignment might be affected.
+    [[params.team.members]]
+      img = "man.png"
+      name = "Алексей Скульский"
+      position = "основатель и учредитель"
+      # livesIn = "[Munich, Germany](#some-maps-url)"
+      # scope = [
+      #   "UX for [member dashboard](#)",
+      #   "Maintainer for [awesome-project](#)",
+      #   "Open Source [community management](#)"
+      # ]
+      # For bio markdown and even multiline strings are available.
+#       bio = """Kay is an awesome Lead Designer with heaps of experience in the field of UX.
+# She worked at Pied Piper for years until they went belly up."""
+#       social = [
+#         ["fa-twitter", "#"],
+#         ["fa-facebook", "#"],
+#         ["fa-linkedin", "#"]
+#       ]
+
+    [[params.team.members]]
+      img = "man.png"
+      name = "Сергей Вострилов"
+      position = "основатель и учредитель"
+      # social = [
+      #   ["fa-twitter", "#"],
+      #   ["fa-facebook", "#"],
+      #   ["fa-linkedin", "#"]
+      # ]
+
+  # Client section
+    [params.clients_list]
+      enable = true
+      # Possibility to center items
+      #center = true
+      # Optional client title specifying the involvement
+      #title = "Used and trusted by"
+
+      # All the clients' logos are stored under 'static/img/logos'.
+      # Replace them with your clients's logos.
+      # Suggestion: .svg in the size of 280px*80px looks good
+      # [[params.clients]]
+      #   logo = "envato.jpg"
+      #   link = "#"
+
+      # [[params.clients]]
+      #   logo = "designmodo.jpg"
+      #   link = "#"
+
+      # [[params.clients]]
+      #   logo = "themeforest.jpg"
+      #   link = "#"
+
+      # [[params.clients]]
+      #   logo = "creative-market.jpg"
+      #   link = "#"
+
+  # Contact section
+  [params.contact]
+    enable = true
+    title = "Связаться с нами"
+    subtitle  = "."
+    buttonText = "Отправить"
+
+    # Since this template is static, the contact form uses www.formspree.io as a
+    # proxy. The form makes a POST request to their servers to send the actual
+    # email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+
+    # It is possible to substitute formspring with other providers
+    # as an example the mailout plugin from caddy.
+    # Provide the post URL for the form and depending on the provider
+    # add some custom JS script to finish the implementation.
+    # postURL = "https://example.com/mailout/"
+
+    email = "your@email.com"
+
+    # Success and error message overwrite for async contact form
+    #thanks = "Thank you for awesomely contacting us."
+    #error = "Message could not be send. Please contact us at mail@example.com instead."
+
+    # 'warning' defines error messages for invalid inputs
+    [params.contact.form.name]
+      text = "Ваше имя *"
+      warning = "Please enter your name."
+
+    [params.contact.form.email]
+      text = "Email *"
+      warning = "Please enter your email address."
+
+    [params.contact.form.phone]
+      text = "Телефон *"
+      warning = "Please enter your phone number."
+
+    [params.contact.form.message]
+      text = "Сообщение *"
+      warning = "Please enter a message."
+
+      # Add optional form fields to identify contact forms
+      #[[params.contact.form.hidden]]
+      #  name = "someID"
+      #  value = "example.com"
+      #
+      #[[params.contact.form.hidden]]
+      # Special values for name such as "page" and "site" will be autofilled
+      #  name = "page"
+
+  # Footer section
+  [params.footer]
+    enable = true
+    copyright = "."
+
+    [[params.footer.social]]
+      icon = "fa-twitter"
+      link = "#"
+      title = "Twitter"
+
+    [[params.footer.social]]
+      icon = "fa-facebook"
+      link = "#"
+      title = "Facebook"
+
+    [[params.footer.social]]
+      icon = "fa-linkedin"
+      link = "#"
+      title = "LinkedIn"
+
+    [[params.footer.quicklinks]]
+      text = "Privacy Policy"
+      link = "#"
+
+    [[params.footer.quicklinks]]
+      text = "Terms of Use"
+      link = "#"
