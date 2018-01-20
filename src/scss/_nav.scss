@@ -1,0 +1,117 @@
+@import "_variables";
+
+nav.navbar {
+  border-color: transparent;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-top: 1.8rem;
+  .navbar-brand {
+    font-family: "PT Sans Narrow", sans-serif;
+    color: $color-accent-main;
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      color: $color-accent-main-hover;
+    }
+  }
+  .navbar-logo img {
+    height: 7.6rem;
+  }
+  div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    button.navbar-toggle {
+      height: 2.6rem;
+      width: 2.6rem;
+      margin: 0.8rem;
+      padding-right: 1.8rem;
+      align-self: center;
+      cursor: pointer;
+    }
+    ul.nav {
+      display: flex;
+      flex-direction: column;
+      &.hidden {
+        display: none;
+      }
+      li {
+        text-align: right;
+        a {
+          padding: 1rem;
+          display: inline-block;
+          color: $color-text-invert;
+          text-transform: uppercase;
+          &:hover,
+          &:focus,
+          &:active {
+            background-color: $color-accent-main-hover;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  nav.navbar {
+    div:nth-child(2) {
+      button.navbar-toggle {
+        display: none;
+      }
+      ul.nav {
+        &,
+        &.hidden {
+          display: block;
+        }
+        li {
+          display: inline;
+        }
+      }
+    }
+  }
+}
+
+nav.navbar.navbar-shrink {
+  background-color: $color-text-disabled;
+  .navbar-logo img {
+    height: 3.6rem;
+  }
+}
+
+header {
+  height: 60vh;
+  text-align: center;
+  color: #fff;
+  background-attachment: scroll;
+  background-image: url(../img/header-bg.jpg);
+  background-position: center center;
+  background-repeat: none;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  display: flex;
+  align-items: center;
+  .intro-text {
+    .intro-lead-in {
+      margin-bottom: 0.8rem;
+      font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 3rem;
+      font-style: italic;
+      line-height: 1em;
+    }
+    .intro-heading {
+      margin-bottom: 2.6rem;
+      text-transform: uppercase;
+      font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 5rem;
+      font-weight: 700;
+      line-height: 1.2em;
+    }
+  }
+}

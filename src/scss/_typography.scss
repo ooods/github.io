@@ -1,0 +1,48 @@
+@import "_variables";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+a {
+  outline: 0;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    outline: 0;
+  }
+  color: $color-accent-main;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: $color-accent-main-hover;
+  }
+}
+
+button,
+.btn {
+  border: 1px solid $color-accent-main;
+  text-transform: uppercase;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: #fff;
+  background-color: $color-accent-main;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    border-color: $color-accent-main-dark;
+    color: #fff;
+    border: 1px solid $color-accent-main;
+    background-color: $color-accent-main-hover;
+  }
+}
