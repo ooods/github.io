@@ -1,0 +1,26 @@
+{
+  "name": "ooods.github.io",
+  "version": "1.0.0",
+  "description": "ooods.ru",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ooods/ooods.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ooods/ooods.github.io/issues"
+  },
+  "homepage": "https://github.com/ooods/ooods.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-sass": "^3.1.0"
+  }
+}
