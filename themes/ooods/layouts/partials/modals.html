@@ -15,12 +15,12 @@
               <h2>{{ .title  | markdownify }}</h2>
               <p class="item-intro text-muted">{{ .subtitle | markdownify }}</p>
               {{ $url := printf "%s" .img }}
-              <img class="img-responsive img-centered" src="{{ $url | absURL }}" alt="">
+              <img class="img-responsive img-centered" src="{{ $url | absURL }}" alt="{{ .title  | markdownify }}">
               <p>{{ .description | markdownify }}</p>
               <ul class="list-inline">
-                <li>Дата: {{ dateFormat "02.01.2006" .date  }}</li>
-                <li>Клиент: <a href="{{ .clientLink }}">{{ .client }}</a></li>
-                <li>Категория: {{ .category  | markdownify }}</li>
+                <li>{{ with $.Site.Params.portfolio.modal.date }}{{ . }}{{ end }}: {{ dateFormat "02.01.2006" .date }}</li>
+                <li>{{ with $.Site.Params.portfolio.modal.client }}{{ . | markdownify }}{{ end }}: <a href="{{ .clientLink }}">{{ .client }}</a></li>
+                <li>{{ with $.Site.Params.portfolio.modal.category }}{{ . }}{{ end }}: {{ .category  | markdownify }}</li>
               </ul>
               <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> {{ with $.Site.Params.portfolio.modal.buttonText }}{{ . }}{{ end }}</button>
             </div>

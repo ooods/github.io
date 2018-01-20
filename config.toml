@@ -133,10 +133,10 @@ googleAnalytics = ""
     subtitle = "."
 
     [params.portfolio.modal]
-      client = "Client"
-      date = "Date"
-      category = "Category"
-      buttonText = "Close project"
+      client = "Клиент"
+      date = "Дата"
+      category = "Категория"
+      buttonText = "Закрыть проект"
 
 
     # About section
