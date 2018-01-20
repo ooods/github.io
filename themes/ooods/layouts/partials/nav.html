@@ -1,54 +1,56 @@
 <nav class="navbar fixed-top">
-  <div>
-    {{ if .Site.Params.navigation.logo }}
-    <a class="navbar-logo" href="{{ if .IsHome }}/#page-top{{ else }}{{ .Site.BaseURL }}{{ end }}">
-      {{ $url := printf "img/%s" .Site.Params.navigation.logo }}
-      <img src="{{ $url | absURL }}" class="img-responsive" alt="{{ .Site.Params.navigation.brand }}">
-    </a>
-    {{ else }}
-    <a class="navbar-brand" href="{{ if .IsHome }}/#page-top{{ else }}{{ .Site.BaseURL }}{{ end }}">
-      {{ .Site.Params.navigation.brand }}
-    </a>
-    {{ end }}
-  </div>
-
-  <div>
-
+  <div class="container">
     <div>
-      <button type="button" class="btn navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <i class="fa fa-bars"></i>
-      </button>
-    </div>
-    <div>
-      <ul class="nav hidden">
-        {{ range .Site.Menus.prepend }}
-        <li>
-          <a href="{{ .URL }}">{{ .Name | markdownify }}</a>
-        </li>
-        {{ end }} {{ if .Site.Params.services.enable }}
-        <li>
-          <a class="page-scroll" href="{{ .Site.BaseURL }}#services">{{ with .Site.Params.navigation.services }}{{ . }}{{ end }}</a>
-        </li>
-        {{ end }} {{ if .Site.Params.portfolio.enable }}
-        <li>
-          <a class="page-scroll" href="{{ .Site.BaseURL }}#portfolio">{{ with .Site.Params.navigation.portfolio }}{{ . }}{{ end }}</a>
-        </li>
-        {{ end }} {{ if .Site.Params.about.enable }}
-        <li>
-          <a class="page-scroll" href="{{ .Site.BaseURL }}#about">{{ with .Site.Params.navigation.about }}{{ . }}{{ end }}</a>
-        </li>
-        {{ end }} {{ if .Site.Params.contact.enable }}
-        <li>
-          <a class="page-scroll" href="{{ .Site.BaseURL }}#team">{{ with .Site.Params.navigation.contact }}{{ . }}{{ end }}</a>
-        </li>
-        {{ end }} {{ range .Site.Menus.postpend }}
-        <li>
-          <a href="{{ .URL }}">{{ .Name }}</a>
-        </li>
-        {{ end }}
-      </ul>
+      {{ if .Site.Params.navigation.logo }}
+      <a class="navbar-logo" href="{{ if .IsHome }}/#page-top{{ else }}{{ .Site.BaseURL }}{{ end }}">
+        {{ $url := printf "img/%s" .Site.Params.navigation.logo }}
+        <img src="{{ $url | absURL }}" class="img-responsive" alt="{{ .Site.Params.navigation.brand }}">
+      </a>
+      {{ else }}
+      <a class="navbar-brand" href="{{ if .IsHome }}/#page-top{{ else }}{{ .Site.BaseURL }}{{ end }}">
+        {{ .Site.Params.navigation.brand }}
+      </a>
+      {{ end }}
     </div>
 
+    <div>
+
+      <div>
+        <button type="button" class="btn navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <i class="fa fa-bars"></i>
+        </button>
+      </div>
+      <div>
+        <ul class="nav hidden">
+          {{ range .Site.Menus.prepend }}
+          <li>
+            <a href="{{ .URL }}">{{ .Name | markdownify }}</a>
+          </li>
+          {{ end }} {{ if .Site.Params.services.enable }}
+          <li>
+            <a class="page-scroll" href="{{ .Site.BaseURL }}#services">{{ with .Site.Params.navigation.services }}{{ . }}{{ end }}</a>
+          </li>
+          {{ end }} {{ if .Site.Params.portfolio.enable }}
+          <li>
+            <a class="page-scroll" href="{{ .Site.BaseURL }}#portfolio">{{ with .Site.Params.navigation.portfolio }}{{ . }}{{ end }}</a>
+          </li>
+          {{ end }} {{ if .Site.Params.about.enable }}
+          <li>
+            <a class="page-scroll" href="{{ .Site.BaseURL }}#about">{{ with .Site.Params.navigation.about }}{{ . }}{{ end }}</a>
+          </li>
+          {{ end }} {{ if .Site.Params.contact.enable }}
+          <li>
+            <a class="page-scroll" href="{{ .Site.BaseURL }}#team">{{ with .Site.Params.navigation.contact }}{{ . }}{{ end }}</a>
+          </li>
+          {{ end }} {{ range .Site.Menus.postpend }}
+          <li>
+            <a href="{{ .URL }}">{{ .Name }}</a>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+
+    </div>
   </div>
 </nav>
