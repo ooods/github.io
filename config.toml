@@ -319,7 +319,7 @@ googleAnalytics = ""
 
   # Footer section
   [params.footer]
-    enable = true
+    enable = false
     copyright = "."
 
     [[params.footer.social]]

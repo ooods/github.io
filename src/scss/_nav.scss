@@ -132,6 +132,7 @@ header {
   -o-background-size: cover;
   display: flex;
   align-items: center;
+  box-shadow: 0 -25px 25px -25px #300 inset;
   .intro-text {
     .intro-lead-in {
       margin-bottom: 0.8rem;
