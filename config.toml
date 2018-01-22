@@ -106,7 +106,7 @@ googleAnalytics = ""
 
     [[params.services.row.list]]
       icon = "fa-newspaper"
-      title = "Веб ууслуги"
+      title = "Веб услуги"
       description = "Производство видео для Интернет сайтов, Создание и ведение Интернет-сайтов, СММ, СЕО"
       url = "#"
 
