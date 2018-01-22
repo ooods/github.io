@@ -46,6 +46,18 @@ button,
     border: 1px solid $color-accent-main;
     background-color: $color-accent-main-hover;
   }
+  &.disabled{
+    background-color: lighten($color-accent-main, 40);
+  }
+  &.disabled:hover,
+  &.disabled:focus,
+  &.disabled:active,
+  &.disabled.active {
+    border-color: $color-accent-main-dark;
+    color: #fff;
+    border: 1px solid $color-accent-main;
+    background-color:lighten($color-accent-main, 40);
+  }
 }
 
 section {

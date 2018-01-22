@@ -1,0 +1,51 @@
+.team-member {
+  margin-bottom: 50px;
+  text-align: center;
+  img {
+    margin: 0 auto;
+    border: 7px solid #fff;
+  }
+  p {
+    margin-top: 0;
+  }
+  h3 {
+    text-transform: none;
+    font-weight: 600;
+    color: #333;
+  }
+  h4 {
+    font-size: 16px;
+    text-transform: none;
+    font-weight: 400;
+    color: $color-text-disabled;
+    margin-bottom: 0px;
+    a {
+      text-transform: none;
+    }
+  }
+  h5 {
+    font-size: 14px;
+    text-transform: none;
+    font-style: italic;
+    font-weight: 200;
+    color: $color-text-disabled;
+    margin-bottom: 15px;
+  }
+  .report {
+    margin-top: 0px;
+  }
+  h5 a {
+    text-transform: none;
+  }
+  ul {
+    list-style: none;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 0;
+  }
+}
+
+.team-bio {
+  padding: 15px;
+}
