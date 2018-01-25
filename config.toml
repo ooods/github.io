@@ -74,7 +74,7 @@ heading = "Page couldn't be found"
 text = "Please visit [this page](/)"
 [params.footer]
 copyright = "."
-enable = true
+enable = false
 [[params.footer.quicklinks]]
 link = "#"
 text = "Privacy Policy"
