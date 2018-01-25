@@ -85,7 +85,7 @@
     box-shadow: none;
     h2 {
       margin-bottom: 15px;
-      font-size: 3em;
+      font-size: 2em;
     }
     p {
       margin-bottom: 30px;
@@ -139,5 +139,15 @@
   .modal-backdrop {
     display: none;
     opacity: 0;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .portfolio-modal {
+    .modal-content {
+      h2 {
+        font-size: 3em;
+      }
+    }
   }
 }
