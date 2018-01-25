@@ -75,7 +75,7 @@ nav.navbar {
     .container {
       margin-left: auto;
       margin-right: auto;
-      ul.nav {
+      div:nth-child(2) ul.nav {
         background-color: transparent;
       }
     }
