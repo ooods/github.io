@@ -59,19 +59,19 @@ subtitle = "."
 title = "Связаться с нами"
 [params.contact.form.email]
 text = "Email *"
-warning = "Please enter your email address."
+warning = "Адрес электронной почты."
 [params.contact.form.message]
 text = "Сообщение *"
-warning = "Please enter a message."
+warning = "Ваше сообщение."
 [params.contact.form.name]
 text = "Ваше имя *"
-warning = "Please enter your name."
+warning = "Представьтесь, пожалуйста."
 [params.contact.form.phone]
 text = "Телефон *"
-warning = "Please enter your phone number."
+warning = "Ваш номер телефона."
 [params.error404]
-heading = "Page couldn't be found"
-text = "Please visit [this page](/)"
+heading = "Страница не найдена"
+text = "Перейти на [this page](/)"
 [params.footer]
 copyright = "."
 enable = false
@@ -109,10 +109,10 @@ enable = true
 subtitle = "."
 title = "Портфолио"
 [params.portfolio.modal]
-buttontext = "Close project"
-category = "Category"
-client = "Client"
-date = "Date"
+buttontext = "Закрыть проект"
+category = "Категоря"
+client = "Клиент"
+date = "Дата"
 [params.services]
 enable = true
 subtitle = "Lorem ipsum dolor sit amet consectetur."
