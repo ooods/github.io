@@ -30,14 +30,16 @@ $(document).ready(function() {
 });
 
 // Highlight the top nav as scrolling occurs
-// $('body').scrollspy({
-//     target: '.navbar-fixed-top'
-// })
+$('body').scrollspy({
+    target: '.navbar'
+})
 
 // Closes the Responsive Menu on Menu Item Click
-// $('.navbar-collapse ul li a').click(function() {
-//     $('.navbar-toggle:visible').click();
-// });
+$('ul.nav li a').click(function() {
+  $("ul.nav").addClass("hidden");
+});
+
+// toggle nav by button
 $(document).ready(function() {
   $("button.navbar-toggle").click(function() {
     $("ul.nav").toggleClass("hidden");
