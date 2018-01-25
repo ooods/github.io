@@ -69,6 +69,15 @@ nav.navbar {
   }
 }
 
+@include media-breakpoint-up(sm) {
+  nav.navbar {
+    .container {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
 @include media-breakpoint-up(md) {
   nav.navbar {
     .navbar-logo {
@@ -157,6 +166,32 @@ header {
   header {
     .intro-text {
       .intro-lead-in {
+        font-size: 1.4rem;
+      }
+      .intro-heading {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  header {
+    .intro-text {
+      .intro-lead-in {
+        font-size: 1.6rem;
+      }
+      .intro-heading {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  header {
+    .intro-text {
+      .intro-lead-in {
         font-size: 2rem;
       }
       .intro-heading {
@@ -166,7 +201,7 @@ header {
   }
 }
 
-@include media-breakpoint-up(md) {
+@include media-breakpoint-up(xl) {
   header {
     .intro-text {
       .intro-lead-in {

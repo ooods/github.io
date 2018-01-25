@@ -19,7 +19,7 @@ $(document).ready(function() {
 
 // Navigation change on scroll
 $(document).ready(function() {
-  var maxOffset = 125;
+  var maxOffset = 1;
   $(window).scroll(function() {
     if ($(window).scrollTop() >= maxOffset) {
       $("nav.navbar").addClass("navbar-shrink");
