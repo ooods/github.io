@@ -1,4 +1,5 @@
 @import "_variables";
+@import "./../../node_modules/bootstrap/scss/_mixins";
 
 $background-color: #f1f1f1;
 
@@ -106,7 +107,7 @@ $background-color: #f1f1f1;
   }
 }
 
-@media (min-width: 768px) {
+@include media-breakpoint-up(md) {
   .timeline {
     &:before {
       left: 50%;
@@ -142,7 +143,7 @@ $background-color: #f1f1f1;
   }
 }
 
-@media (min-width: 992px) {
+@include media-breakpoint-up(lg) {
   .timeline > li {
     min-height: 150px;
     .timeline-panel {
@@ -163,7 +164,7 @@ $background-color: #f1f1f1;
   }
 }
 
-@media (min-width: 1200px) {
+@include media-breakpoint-up(xl) {
   .timeline > li {
     min-height: 170px;
     .timeline-panel {

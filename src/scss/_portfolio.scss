@@ -1,3 +1,5 @@
+@import "./../../node_modules/bootstrap/scss/_mixins";
+
 #portfolio {
   img.img-responsive {
     width: 100% !important;
@@ -65,7 +67,7 @@
   }
 }
 
-@media (min-width: 767px) {
+@include media-breakpoint-up(md) {
   #portfolio .portfolio-item {
     margin: 0 0 30px;
   }
