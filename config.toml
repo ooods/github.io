@@ -122,32 +122,32 @@ title = "Услуги"
 description = "Производство видеофильмов, Производство видеосъемок и монтаж видео, Производство видео для Интернет сайтов"
 icon = "fa-lock"
 title = "Видео"
-url = "#"
+url = "services-video"
 [[params.services.row.list]]
 description = "Производство ТВ-программ, Производство ТВ-сюжетов, Производство ТВ-рекламы."
 icon = "fa-lock"
 title = "ТВ"
-url = "#"
+url = "services-tv"
 [[params.services.row.list]]
 description = "Производство видео для Интернет сайтов, Создание и ведение Интернет-сайтов, СММ, СЕО"
 icon = "fa-lock"
 title = "Веб услуги"
-url = "#"
+url = "services-web"
 [[params.services.row.list]]
 description = "Разработка логотипов. Создание и предпечатная подготовка графики"
 icon = "fa-lock"
 title = "Дизайн"
-url = "#"
+url = "services-design"
 [[params.services.row.list]]
 description = "Производство радиопрограмм. Производство аудиорекламы."
 icon = "fa-lock"
 title = "Реклама"
-url = "#"
+url = "services-advertisment"
 [[params.services.row.list]]
 description = "Репутационный и электоральный консалтин."
 icon = "fa-lock"
 title = "Консалтинг"
-url = "#"
+url = "services-consulting.html"
 [params.team]
 description = "."
 enable = true
