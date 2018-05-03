@@ -1,6 +1,6 @@
 ---
-title: "Services Advertisment"
-date: 2018-05-03T12:51:30+03:00
+title: Services Advertisment
+date: 2018-05-03 12:51:30 +0300
 type: page
 draft: true
 
