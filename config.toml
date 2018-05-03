@@ -94,7 +94,7 @@ icon = "fa-linkedin"
 link = "#"
 title = "LinkedIn"
 [params.hero]
-buttontext = "Далее"
+buttontext = "мы предлагаем"
 subtitle = "«Деловое сотрудничество»"
 title = "продюсерский центр "
 [params.navigation]
@@ -120,32 +120,32 @@ title = "Услуги"
 [[params.services.row]]
 [[params.services.row.list]]
 description = "Производство видеофильмов, Производство видеосъемок и монтаж видео, Производство видео для Интернет сайтов"
-icon = "fa-lock"
+icon = "fa-video"
 title = "Видео"
 url = "services-video"
 [[params.services.row.list]]
 description = "Производство ТВ-программ, Производство ТВ-сюжетов, Производство ТВ-рекламы."
-icon = "fa-lock"
+icon = "fa-tv"
 title = "ТВ"
 url = "services-tv"
 [[params.services.row.list]]
 description = "Производство видео для Интернет сайтов, Создание и ведение Интернет-сайтов, СММ, СЕО"
-icon = "fa-lock"
+icon = "fa-globe"
 title = "Веб услуги"
 url = "services-web"
 [[params.services.row.list]]
 description = "Разработка логотипов. Создание и предпечатная подготовка графики"
-icon = "fa-lock"
+icon = "fa-eye"
 title = "Дизайн"
 url = "services-design"
 [[params.services.row.list]]
 description = "Производство радиопрограмм. Производство аудиорекламы."
-icon = "fa-lock"
-title = "Реклама"
+icon = "fa-headphones"
+title = "Радио"
 url = "services-advertising"
 [[params.services.row.list]]
-description = "Репутационный и электоральный консалтин."
-icon = "fa-lock"
+description = "Репутационный и электоральный консалтинг."
+icon = "fa-users"
 title = "Консалтинг"
 url = "services-consulting.html"
 [params.team]
