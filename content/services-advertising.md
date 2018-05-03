@@ -2,7 +2,6 @@
 title: "Радио"
 date: 2018-05-03 13:20:07 +0300
 type: page
-draft: false
 
 ---
 <h1>Реклама</h1>
