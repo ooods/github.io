@@ -1,25 +1,14 @@
-{{ "<!-- About Section -->" | safeHTML }}
 <section id="about">
   <div class="container">
     <div class="text-center">
       <h2 class="section-heading">{{ with .Site.Params.about.title }}{{ . | markdownify }}{{ end }}</h2>
       <h3 class="section-subheading text-muted">{{ with .Site.Params.about.subtitle }}{{ . | markdownify }}{{ end }}</h3>
     </div>
-  
+
     <div>
-      <p>Продюсерский центр &laquo;Деловое сотрудничество&raquo; (юридически -
-        <nobr>ООО &laquo;Деловое сотрудничество&raquo;</nobr>) работает на&nbsp;медийном рынке Нижнего Новгорода с&nbsp;1999 года,
-        занимается информационным обеспечением ряда государственных структур, Правительства Нижегородской области, фирм и&nbsp;компаний
-        региона. Специализируется на&nbsp;производстве видеофильмов, рекламной видеопродукции, продюсировании телевизионных
-        программ, а&nbsp;также создании и&nbsp;обслуживании сайтов, создании материалов для печатных СМИ, производстве печатной
-        рекламной продукции.
-      </p>
-      <p>Продюсерский центр привлекает для осуществления проектов высококлассных специалистов: режиссеров ТВ, операторов, фотографов,
-        дизайнеров, журналистов, редакторов, музыкантов и&nbsp;звукорежиссеров. Все они имеют многолетний опыт работы в&nbsp;крупных
-        телерадиокомпаниях. Общее руководство проектами осуществляют наши продюсеры, которые и&nbsp;несут полную ответственность
-        за&nbsp;качество продукции и&nbsp;сроки выполнения заказов.</p>
-      <p>На&nbsp;этом сайте вы&nbsp;сможете познакомиться с&nbsp;некоторыми нашими работами. Работая в&nbsp;каждом проекте, мы&nbsp;продолжаем
-        учиться. Но&nbsp;уже сейчас мы&nbsp;готовы многое вам предложить, потому что многое умеем.</p>
+      {{ range .Site.Params.about.description }}
+      <p>{{ .paragraph | markdownify }}</p>
+      {{ end }}
     </div>
 
     <div>
@@ -32,30 +21,40 @@
       <ul class="timeline">
 
         {{ range $i, $e := .Site.Params.about.events }}
-          <li {{ if (not (modBool $i 2)) }}class="timeline-inverted" {{ end }}>
-            <div class="timeline-image">
-              {{ $url := printf "img/about/%s" .img }}
-              <img class="img-circle img-responsive" src="{{ $url | absURL }}" alt="">
+        <li {{ if (not (modBool $i 2)) }}class="timeline-inverted" {{ end }}>
+          <div class="timeline-image">
+            {{ $url := printf "img/about/%s" .img }}
+            <img class="img-circle img-responsive" src="{{ $url | absURL }}" alt="">
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4>{{ .date }}</h4>
+              <h4 class="subheading">{{ .title | markdownify }}</h4>
             </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>{{ .date }}</h4>
-                <h4 class="subheading">{{ .title | markdownify }}</h4>
-              </div>
-              <div class="timeline-body">
-                <p class="text-muted">{{ .description  | markdownify }}</p>
-              </div>
+            <div class="timeline-body">
+              <p class="text-muted">{{ .description | markdownify }}</p>
             </div>
-          </li>
+          </div>
+        </li>
         {{ end }}
 
         <li class="timeline-inverted">
+          {{ with .Site.Params.about.endpoint }}
           <div class="timeline-image">
-            <h4>{{ with .Site.Params.about.endpoint }}{{ . | markdownify }}{{ end }}</h4>
+            <h4>{{ .slogan | markdownify }}</h4>
           </div>
+          <div class="timeline-panel">
+            <div class="timeline-body">
+              <p class="text-muted">{{ .description | markdownify }}</p>
+            </div>
+            <div class="timeline-heading">
+              <h4 class="subheading">{{ .title | markdownify }}</h4>
+            </div>
+          </div>
+          {{ end }}
         </li>
       </ul>
     </div>
- 
+
   </div>
 </section>
