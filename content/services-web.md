@@ -1,6 +1,7 @@
 ---
-title: "Services Web"
-date: 2018-05-03T11:25:18+03:00
+title: Services Web
+date: 2018-05-03 11:25:18 +0300
+type: page
 draft: true
----
 
+---

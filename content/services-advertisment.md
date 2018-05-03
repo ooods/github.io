@@ -1,9 +1,9 @@
 ---
-title: "Services Advertisment"
-date: 2018-05-03T11:25:33+03:00
-draft: false
----
+title: Services Advertisment
+date: 2018-05-03 11:25:33 +0300
+type: page
 
+---
 here we are
 here we are
 here we are

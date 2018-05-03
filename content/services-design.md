@@ -1,6 +1,7 @@
 ---
-title: "Services Design"
-date: 2018-05-03T11:25:24+03:00
+title: Services Design
+date: 2018-05-03 11:25:24 +0300
+type: page
 draft: true
----
 
+---

@@ -1,6 +1,7 @@
 ---
-title: "Services Consulting"
-date: 2018-05-03T11:25:40+03:00
+title: Services Consulting
+date: 2018-05-03 11:25:40 +0300
+type: page
 draft: true
----
 
+---
