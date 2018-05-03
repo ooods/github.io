@@ -3,6 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/services-advertising/</loc>
+    <lastmod>2018-05-03T13:20:07+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/services-consulting/</loc>
+    <lastmod>2018-05-03T11:25:40+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/services-design/</loc>
+    <lastmod>2018-05-03T11:25:24+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/services-web/</loc>
+    <lastmod>2018-05-03T11:25:18+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/services-tv/</loc>
+    <lastmod>2018-05-03T11:25:12+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/services-video/</loc>
+    <lastmod>2018-05-03T11:25:02+03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/categories/</loc>
     <priority>0</priority>
   </url>
@@ -14,6 +44,7 @@
   
   <url>
     <loc>/</loc>
+    <lastmod>2018-05-03T13:20:07+03:00</lastmod>
     <priority>0</priority>
   </url>
   
