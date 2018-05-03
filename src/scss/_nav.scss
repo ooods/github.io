@@ -159,13 +159,16 @@ nav.navbar.navbar-shrink {
     }
 }
 
-.header {
+header,
+.main-header {
+    display: flex;
+    align-items: center;
+    text-align: center;
     @include intros;
 }
 
 header {
     height: 80vh;
-    text-align: center;
     color: #fff;
     background-attachment: fixed;
     background-image: url(../img/header-bg.jpg);
@@ -175,10 +178,7 @@ header {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    display: flex;
-    align-items: center;
     box-shadow: 0 -25px 25px -25px #300 inset;
-    @include intros;
 }
 
 @include media-breakpoint-up(sm) {
