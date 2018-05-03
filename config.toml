@@ -139,15 +139,15 @@ icon = "fa-eye"
 title = "Дизайн"
 url = "services-design"
 [[params.services.row.list]]
-description = "Производство радиопрограмм. Производство аудиорекламы."
-icon = "fa-headphones"
-title = "Радио"
+description = "Проведение комплексных рекламных кампаний."
+icon = "fa-chart-line"
+title = "Реклама"
 url = "services-advertising"
 [[params.services.row.list]]
 description = "Репутационный и электоральный консалтинг."
 icon = "fa-users"
 title = "Консалтинг"
-url = "services-consulting.html"
+url = "services-consulting"
 [params.team]
 description = "."
 enable = true
