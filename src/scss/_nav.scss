@@ -168,7 +168,7 @@ header,
 }
 
 header {
-    display: grid;
+    min-height: 80vh;
     height: 80vh;
     color: #fff;
     background-attachment: fixed;
@@ -184,6 +184,7 @@ header {
 
 @include media-breakpoint-up(sm) {
     header {
+        min-height: 70vh;
         height: 70vh;
         .intro-text {
             .intro-lead-in {
@@ -197,6 +198,7 @@ header {
 }
 
 @include media-breakpoint-up(md) {
+    min-height: 60vh;
     height: 60vh;
     header {
         .intro-text {
@@ -238,6 +240,7 @@ header {
 
 @media screen and (max-height: 768px) {
     header {
+        min-height: 80vh;
         height: 80vh;
         .intro-text {
             .intro-lead-in {
@@ -252,6 +255,7 @@ header {
 
 @media screen and (max-height: 568px) {
     header {
+        min-height: 100vh;
         height: 100vh;
         .intro-text {
             .intro-lead-in {
