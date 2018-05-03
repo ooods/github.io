@@ -139,21 +139,7 @@ nav.navbar.navbar-shrink {
     }
 }
 
-header {
-    height: 80vh;
-    text-align: center;
-    color: #fff;
-    background-attachment: fixed;
-    background-image: url(../img/header-bg.jpg);
-    background-position: center center;
-    background-repeat: none;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    display: flex;
-    align-items: center;
-    box-shadow: 0 -25px 25px -25px #300 inset;
+@mixin intros {
     .intro-text {
         .intro-lead-in {
             margin-bottom: 0.8rem;
@@ -171,6 +157,28 @@ header {
             line-height: 1.2em;
         }
     }
+}
+
+.header {
+    @include intros;
+}
+
+header {
+    height: 80vh;
+    text-align: center;
+    color: #fff;
+    background-attachment: fixed;
+    background-image: url(../img/header-bg.jpg);
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 -25px 25px -25px #300 inset;
+    @include intros;
 }
 
 @include media-breakpoint-up(sm) {
