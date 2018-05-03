@@ -88,6 +88,9 @@ $background-color: #f1f1f1;
         }
         &:last-child {
             margin-bottom: 0;
+            &>.timeline-image>h4 {
+                display: none;
+            }
         }
     }
     .timeline-heading h4 {
@@ -136,6 +139,15 @@ $background-color: #f1f1f1;
                 float: right;
                 padding: 0 30px 20px 20px;
                 text-align: left;
+            }
+            &:last-child {
+                margin-bottom: 0;
+                &>.timeline-image>h4 {
+                    display: inline-block;
+                }
+                &>.timeline-panel>h4 {
+                    display: none;
+                }
             }
         }
     }
