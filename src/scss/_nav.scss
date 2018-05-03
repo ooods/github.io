@@ -219,3 +219,45 @@ header {
     }
   }
 }
+
+@media screen and (max-height: 768px) {
+  header {
+    height: 80vh;
+    .intro-text {
+      .intro-lead-in {
+        font-size: 1.6rem;
+      }
+      .intro-heading {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-height: 568px) {
+  header {
+    height: 100vh;
+    .intro-text {
+      .intro-lead-in {
+        font-size: 1.4rem;
+      }
+      .intro-heading {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-height: 368px) {
+  header {
+    min-height: 20em;
+    .intro-text {
+      .intro-lead-in {
+        font-size: 1.4rem;
+      }
+      .intro-heading {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
