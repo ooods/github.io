@@ -7,7 +7,7 @@
     {{ partial "nav.html" . }}
 
     {{ "<!-- 404 -->" | safeHTML }}
-    <header>
+    <section>
       <div class="container">
         <div class="404">
           <div class="intro-text">
@@ -25,7 +25,7 @@
           </div>
         </div>
       </div>
-    </header>
+    </section>
 
     {{ if .Site.Params.footer.enable }}
       {{ partial "footer.html" . }}
