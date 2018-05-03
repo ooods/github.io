@@ -115,7 +115,7 @@ client = "Клиент"
 date = "Дата"
 [params.services]
 enable = true
-subtitle = "Lorem ipsum dolor sit amet consectetur."
+subtitle = "."
 title = "Услуги"
 [[params.services.row]]
 [[params.services.row.list]]
