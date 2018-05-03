@@ -142,7 +142,7 @@ url = "services-design"
 description = "Производство радиопрограмм. Производство аудиорекламы."
 icon = "fa-lock"
 title = "Реклама"
-url = "services-advertisment"
+url = "services-advertising"
 [[params.services.row.list]]
 description = "Репутационный и электоральный консалтин."
 icon = "fa-lock"
