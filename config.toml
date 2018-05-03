@@ -153,6 +153,7 @@ description = "."
 enable = true
 subtitle = "."
 title = "Учредители"
+center = true
 [[params.team.members]]
 img = "man.png"
 name = "Алексей Скульский"
@@ -161,3 +162,9 @@ position = "основатель и учредитель"
 img = "man.png"
 name = "Сергей Вострилов"
 position = "основатель и учредитель"
+[params.legal]
+name = "ООО «Деловое сотрудничество»"
+address = "г.&nbsp;Н.&nbsp;Новгород,<br />ул.&nbsp;Должанская, д.&nbsp;37, офис&nbsp;228"
+phone = "+7&nbsp;920&nbsp;014&nbsp;57&nbsp;44"
+email = "orr-nn@mail.ru"
+website = "http://ooods.ru/"

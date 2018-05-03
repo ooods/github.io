@@ -1,0 +1,17 @@
+<footer>
+    <div class="container">
+        {{ with $.Site.Params.legal }}
+        <p>
+            <strong>
+                {{ .name | markdownify }}
+            </strong>
+        </p>
+        <div class="footer-contacts">
+            <p>{{ .address | markdownify }}
+                <br /> {{ .phone | markdownify }}</p>
+            <p>{{ .website | markdownify }}
+                <br /> {{ .email | markdownify }}</p>
+        </div>
+        {{ end }}
+    </div>
+</footer>
