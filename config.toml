@@ -97,6 +97,12 @@ title = "LinkedIn"
 buttontext = "мы предлагаем"
 subtitle = "«Деловое сотрудничество»"
 title = "продюсерский центр "
+[params.legal]
+address = "г.&nbsp;Н.&nbsp;Новгород,<br />ул.&nbsp;Должанская, д.&nbsp;37, офис&nbsp;228"
+email = "orr-nn@mail.ru"
+name = "ООО «Деловое сотрудничество»"
+phone = "+7&nbsp;920&nbsp;014&nbsp;57&nbsp;44"
+website = "http://ooods.ru/"
 [params.navigation]
 about = "О нас"
 brand = "продюсерский центр «Деловое сотрудничество»"
@@ -149,11 +155,11 @@ icon = "fa-users"
 title = "Консалтинг"
 url = "services-consulting"
 [params.team]
+center = true
 description = "."
 enable = true
 subtitle = "."
 title = "Учредители"
-center = true
 [[params.team.members]]
 img = "man.png"
 name = "Алексей Скульский"
@@ -162,9 +168,3 @@ position = "основатель и учредитель"
 img = "man.png"
 name = "Сергей Вострилов"
 position = "основатель и учредитель"
-[params.legal]
-name = "ООО «Деловое сотрудничество»"
-address = "г.&nbsp;Н.&nbsp;Новгород,<br />ул.&nbsp;Должанская, д.&nbsp;37, офис&nbsp;228"
-phone = "+7&nbsp;920&nbsp;014&nbsp;57&nbsp;44"
-email = "orr-nn@mail.ru"
-website = "http://ooods.ru/"
