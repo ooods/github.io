@@ -71,7 +71,7 @@ text = "Телефон *"
 warning = "Ваш номер телефона."
 [params.error404]
 heading = "Страница не найдена"
-text = "Перейти на [this page](/)"
+text = "Перейти на [главную](/)"
 [params.footer]
 copyright = "."
 enable = false

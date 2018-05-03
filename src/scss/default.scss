@@ -1,19 +1,19 @@
 @import "./../../node_modules/bootstrap/scss/bootstrap";
-@import "_variables";
-@import "_typography";
-@import "_nav";
-@import "_portfolio";
-@import "_about";
-@import "_team";
-@import "_contacts";
-
+@import "variables";
+@import "typography";
+@import "nav";
+@import "portfolio";
+@import "about";
+@import "team";
+@import "contacts";
+@import "single-page";
 body {
-  color: $color-text-main;
-  overflow-x: hidden;
-  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  webkit-tap-highlight-color: $color-accent-main;
+    color: $color-text-main;
+    overflow-x: hidden;
+    font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    webkit-tap-highlight-color: $color-accent-main;
 }
 
 .container {
-  // width: 100%;
+    // width: 100%;
 }

@@ -1,85 +1,84 @@
 @import "_variables";
 @import "./../../node_modules/bootstrap/scss/_mixins";
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  text-transform: uppercase;
-  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  color: $color-text-header;
+    text-transform: uppercase;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    color: $color-text-header;
 }
 
 a {
-  outline: 0;
-  &:hover,
-  &:focus,
-  &:active,
-  &.active {
     outline: 0;
-  }
-  color: $color-accent-main;
-  &:hover,
-  &:focus,
-  &:active,
-  &.active {
-    color: $color-accent-main-hover;
-  }
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+        outline: 0;
+    }
+    color: $color-accent-main;
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+        color: $color-accent-main-hover;
+    }
 }
 
 button,
 .btn {
-  border: 1px solid $color-accent-main;
-  text-transform: uppercase;
-  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  color: #fff;
-  background-color: $color-accent-main;
-  &:hover,
-  &:focus,
-  &:active,
-  &.active {
-    border-color: $color-accent-main-dark;
-    color: #fff;
     border: 1px solid $color-accent-main;
-    background-color: $color-accent-main-hover;
-  }
-  &.disabled {
-    background-color: lighten($color-accent-main, 40);
-  }
-  &.disabled:hover,
-  &.disabled:focus,
-  &.disabled:active,
-  &.disabled.active {
-    border-color: $color-accent-main-dark;
+    text-transform: uppercase;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
     color: #fff;
-    border: 1px solid $color-accent-main;
-    background-color: lighten($color-accent-main, 40);
-  }
+    background-color: $color-accent-main;
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+        border-color: $color-accent-main-dark;
+        color: #fff;
+        border: 1px solid $color-accent-main;
+        background-color: $color-accent-main-hover;
+    }
+    &.disabled {
+        background-color: lighten($color-accent-main, 40);
+    }
+    &.disabled:hover,
+    &.disabled:focus,
+    &.disabled:active,
+    &.disabled.active {
+        border-color: $color-accent-main-dark;
+        color: #fff;
+        border: 1px solid $color-accent-main;
+        background-color: lighten($color-accent-main, 40);
+    }
 }
 
 section {
-  padding: 6rem 0;
-  h2.section-heading {
-    margin-top: 0;
-    margin-bottom: 1rem;
-    font-size: 2.6rem;
-  }
-  h3.section-subheading {
-    margin-bottom: 3.6rem;
-    text-transform: none;
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1rem;
-    font-style: italic;
-    font-weight: 400;
-  }
+    padding: 6rem 0;
+    h2.section-heading {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        font-size: 2.6rem;
+    }
+    h3.section-subheading {
+        margin-bottom: 3.6rem;
+        text-transform: none;
+        font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 1rem;
+        font-style: italic;
+        font-weight: 400;
+    }
 }
 
 @include media-breakpoint-up(sm) {
-  section {
-    padding: 8rem 0;
-  }
+    section {
+        padding: 8rem 0;
+    }
 }

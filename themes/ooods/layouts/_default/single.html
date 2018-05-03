@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+
+  {{ partial "head.html" . }}
+
+  <body id="page-top" class="index">
+        {{ partial "nav.html" . }}
+
+        <section class="single-page-container">
+            <div class="container">
+        {{ .Page.Content }}
+            </div>
+        </section>
+
+        {{ if .Site.Params.footer.enable }}
+          {{ partial "footer.html" . }}
+        {{ end }}
+
+        {{ partial "js.html" . }}
+    </body>
+  </html>

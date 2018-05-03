@@ -1,4 +1,4 @@
-<nav class="navbar fixed-top">
+<nav class="navbar fixed-top{{ if .IsHome }}{{ else }} branded{{ end }}">
   <div class="container">
     <div>
       {{ if .Site.Params.navigation.logo }}
