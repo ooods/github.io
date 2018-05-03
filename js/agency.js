@@ -1,6 +1,6 @@
 // Smooth scrolling via animate()
-$(document).ready(function() {
-  $("a").on("click", function(event) {
+$(document).ready(function () {
+  $("a").on("click", function (event) {
     if (this.hash && window.location.pathname == "/") {
       event.preventDefault();
       var hash = this.hash;
@@ -9,7 +9,7 @@ $(document).ready(function() {
           scrollTop: $(hash).offset().top
         },
         800,
-        function() {
+        function () {
           window.location.hash = hash;
         }
       );
@@ -18,40 +18,44 @@ $(document).ready(function() {
 });
 
 // Navigation change on scroll
-$(document).ready(function() {
-  var maxOffset = 1;
-  $(window).scroll(function() {
+$(document).ready(function () {
+  const f = () => {
     if ($(window).scrollTop() >= maxOffset) {
       $("nav.navbar").addClass("navbar-shrink");
     } else {
       $("nav.navbar").removeClass("navbar-shrink");
     }
+  };
+  var maxOffset = 1;
+  $(window).scroll(function () {
+    f();
   });
+  f();
 });
 
 // Highlight the top nav as scrolling occurs
 $('body').scrollspy({
-    target: '.navbar'
+  target: '.navbar'
 })
 
 // Closes the Responsive Menu on Menu Item Click
-$('ul.nav li a').click(function() {
+$('ul.nav li a').click(function () {
   $("ul.nav").addClass("hidden");
 });
 
 // toggle nav by button
-$(document).ready(function() {
-  $("button.navbar-toggle").click(function() {
+$(document).ready(function () {
+  $("button.navbar-toggle").click(function () {
     $("ul.nav").toggleClass("hidden");
   });
 });
 
 // Async contact form
-$("form[id=contactForm]").submit(function() {
+$("form[id=contactForm]").submit(function () {
   $.post(
     $(this).attr("action"),
     $(this).serialize(),
-    function(data, textStatus, jqXHR) {
+    function (data, textStatus, jqXHR) {
       $("form[id=contactForm] #success").hide();
       $("form[id=contactForm] #error").hide();
       if (jqXHR.status == 200) {
@@ -59,7 +63,7 @@ $("form[id=contactForm]").submit(function() {
       }
     },
     "json"
-  ).fail(function() {
+  ).fail(function () {
     $("form[id=contactForm] #success").hide();
     $("form[id=contactForm] #error").hide();
     $("form[id=contactForm] #error").show();
