@@ -152,7 +152,7 @@ url = "services-consulting"
 description = "."
 enable = true
 subtitle = "."
-title = "Наша комманда"
+title = "Учредители"
 [[params.team.members]]
 img = "man.png"
 name = "Алексей Скульский"
