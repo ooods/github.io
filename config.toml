@@ -170,10 +170,10 @@ enable = true
 subtitle = "."
 title = "Учредители"
 [[params.team.members]]
-img = "man.png"
+img = "ams.png"
 name = "Алексей Скульский"
 position = "основатель и учредитель"
 [[params.team.members]]
-img = "man.png"
+img = "sav.png"
 name = "Сергей Вострилов"
 position = "основатель и учредитель"
