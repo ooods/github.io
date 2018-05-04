@@ -62,7 +62,7 @@ title = "Новые направления"
 enable = true
 [params.contact]
 buttontext = "Отправить"
-email = "your@email.com"
+email = "orr-nn@mail.ru"
 enable = true
 subtitle = "."
 title = "Связаться с нами"
