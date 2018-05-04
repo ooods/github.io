@@ -1,5 +1,25 @@
 @import "_variables";
 @import "./../../node_modules/bootstrap/scss/_mixins";
+@mixin intros {
+    .intro-text {
+        .intro-lead-in {
+            margin-bottom: 0.8rem;
+            font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 1rem;
+            font-style: italic;
+            line-height: 1em;
+        }
+        .intro-heading {
+            margin-bottom: 2.6rem;
+            text-transform: uppercase;
+            font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            line-height: 1.2em;
+        }
+    }
+}
+
 nav.navbar {
     border-color: transparent;
     padding-top: 1.8rem;
@@ -71,10 +91,7 @@ nav.navbar {
             }
         }
     }
-}
-
-@include media-breakpoint-up(sm) {
-    nav.navbar {
+    @include media-breakpoint-up(sm) {
         .container {
             margin-left: auto;
             margin-right: auto;
@@ -83,10 +100,7 @@ nav.navbar {
             }
         }
     }
-}
-
-@include media-breakpoint-up(md) {
-    nav.navbar {
+    @include media-breakpoint-up(md) {
         .navbar-logo {
             img {
                 height: 8rem;
@@ -107,10 +121,7 @@ nav.navbar {
             }
         }
     }
-}
-
-@include media-breakpoint-up(lg) {
-    nav.navbar {
+    @include media-breakpoint-up(lg) {
         .container {
             margin-left: auto;
             margin-right: auto;
@@ -121,45 +132,24 @@ nav.navbar {
             }
         }
     }
-}
-
-nav.navbar.navbar-shrink {
-    padding-top: 0.8rem;
-    background-color: $color-accent-main-desaturated;
-    transform: scale(1);
-    transition: 0.15s all ease;
-    &.branded {
-        background-position-y: -315px;
-        box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, .55);
-    }
-    .navbar-logo img {
+    &.navbar-shrink {
+        padding-top: 0.8rem;
+        background-color: $color-accent-main-desaturated;
         transform: scale(1);
-        transition: 0.35s all ease;
-        height: 3.6rem;
-    }
-}
-
-@mixin intros {
-    .intro-text {
-        .intro-lead-in {
-            margin-bottom: 0.8rem;
-            font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-            font-size: 1rem;
-            font-style: italic;
-            line-height: 1em;
+        transition: 0.15s all ease;
+        &.branded {
+            background-position-y: -315px;
+            box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, .55);
         }
-        .intro-heading {
-            margin-bottom: 2.6rem;
-            text-transform: uppercase;
-            font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-            font-size: 1.8rem;
-            font-weight: 700;
-            line-height: 1.2em;
+        .navbar-logo img {
+            transform: scale(1);
+            transition: 0.35s all ease;
+            height: 3.6rem;
         }
     }
 }
 
-header,
+header#main-header,
 .main-header {
     display: flex;
     align-items: center;
@@ -167,7 +157,7 @@ header,
     @include intros;
 }
 
-header {
+header#main-header {
     min-height: 80vh;
     height: 80vh;
     color: #fff;
@@ -180,10 +170,18 @@ header {
     background-size: cover;
     -o-background-size: cover;
     box-shadow: 0 -25px 25px -25px #300 inset;
-}
-
-@include media-breakpoint-up(sm) {
-    header {
+    @media screen and (max-height: 768px) {
+        min-height: 80vh;
+        height: 80vh;
+    }
+    @media screen and (max-height: 568px) {
+        min-height: 100vh;
+        height: 100vh;
+    }
+    @media screen and (max-height: 368px) {
+        min-height: 30em;
+    }
+    @include media-breakpoint-up(sm) {
         min-height: 70vh;
         height: 70vh;
         .intro-text {
@@ -195,12 +193,9 @@ header {
             }
         }
     }
-}
-
-@include media-breakpoint-up(md) {
-    min-height: 60vh;
-    height: 60vh;
-    header {
+    @include media-breakpoint-up(md) {
+        min-height: 60vh;
+        height: 60vh;
         .intro-text {
             .intro-lead-in {
                 font-size: 1.6rem;
@@ -210,10 +205,7 @@ header {
             }
         }
     }
-}
-
-@include media-breakpoint-up(lg) {
-    header {
+    @include media-breakpoint-up(lg) {
         .intro-text {
             .intro-lead-in {
                 font-size: 2rem;
@@ -223,60 +215,13 @@ header {
             }
         }
     }
-}
-
-@include media-breakpoint-up(xl) {
-    header {
+    @include media-breakpoint-up(xl) {
         .intro-text {
             .intro-lead-in {
                 font-size: 3rem;
             }
             .intro-heading {
                 font-size: 5rem;
-            }
-        }
-    }
-}
-
-@media screen and (max-height: 768px) {
-    header {
-        min-height: 80vh;
-        height: 80vh;
-        .intro-text {
-            .intro-lead-in {
-                font-size: 1.6rem;
-            }
-            .intro-heading {
-                font-size: 3rem;
-            }
-        }
-    }
-}
-
-@media screen and (max-height: 568px) {
-    header {
-        min-height: 100vh;
-        height: 100vh;
-        .intro-text {
-            .intro-lead-in {
-                font-size: 1.4rem;
-            }
-            .intro-heading {
-                font-size: 1.6rem;
-            }
-        }
-    }
-}
-
-@media screen and (max-height: 368px) {
-    header {
-        min-height: 20em;
-        .intro-text {
-            .intro-lead-in {
-                font-size: 1.4rem;
-            }
-            .intro-heading {
-                font-size: 1.6rem;
             }
         }
     }
