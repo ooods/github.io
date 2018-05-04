@@ -1,0 +1,10 @@
+@import "./../../node_modules/bootstrap/scss/_mixins";
+.footer-contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    &>div {
+        flex-grow: 1;
+    }
+}
