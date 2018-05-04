@@ -1,7 +1,14 @@
 section.single-page-container {
     margin-top: 160px;
     flex-grow: 1;
-    .container img{
+    .container img {
         @include img-fluid;
+    }
+    h6 {
+        margin-top: 2.5rem;
+        /* Youtube video */
+        &+div {
+            margin-bottom: 2.5em;
+        }
     }
 }
