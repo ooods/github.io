@@ -179,27 +179,27 @@
          * submit the form and there are some errors.
          * Set this to an empty string to skip the popup alert.
          */
-        var s_error_submit = "The form is not complete. Please fix the errors before submitting.";
+        var s_error_submit = "Форма не завершена. Исправьте ошибки перед отправкой, пожалуйста.";
         /*
          * s_error_field_empty is the default error message for a required field
          * whose value is empty.
          */
-        var s_error_field_empty = "Please enter a value for this field.";
+        var s_error_field_empty = "Пожалуйста, заполните это поле.";
         /*
          * s_error_radio_reqd is the default error message for a required radio
          * button field whose value is not checked.
          */
-        var s_error_radio_reqd = "Please select one of the options.";
+        var s_error_radio_reqd = "Пожалуйста, выберите один из вариантов.";
         /*
          * s_error_select_reqd is the default error message for a required select
          * field whose value is empty.
          */
-        var s_error_select_reqd = "Please select a value for this field.";
+        var s_error_select_reqd = "Пожалуйста, выберите значение для этого поля.";
         /*
          * s_error_checkbox_reqd is the default error message for a required select
          * field whose value is empty.
          */
-        var s_error_checkbox_reqd = "You must check this box.";
+        var s_error_checkbox_reqd = "Этот флажок необходимо отметить.";
 
 
         /*alert("FormVal.js");*/
@@ -721,9 +721,9 @@
             var mesgs = {
                 loading_img: '<img src="ajax-loading.gif" alt="" />',
                 done_img: '<img src="ajax-done.gif" alt="" />',
-                done_mesg: 'Message sent.',
+                done_mesg: 'Сообщение отправлено.',
                 error_img: '<img src="ajax-error.gif" alt="" />',
-                error_mesg: 'Error!'
+                error_mesg: 'Ошибка!'
             };
 
             function AdjustImgTag(s_url, s_img) {
@@ -972,7 +972,7 @@
                     catch (exc) {
                         res = {
                             Result: 'FAILED',
-                            ErrorMesg: 'Server returned unexpected result (JSON parse failed)'
+                            ErrorMesg: 'Сервер вернул ошибку: JSON parse failed'
                         };
                     }
 
