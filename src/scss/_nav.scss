@@ -175,7 +175,7 @@ header#main-header {
         height: 100vh;
     }
     @media screen and (max-height: 600px) {
-        min-height: 40em;
+        min-height: 36em;
     }
     @include media-breakpoint-up(sm) {
         .intro-text {
