@@ -515,17 +515,14 @@
     
 
     
-      <!-- Contact Section -->
-<section id="contact">
+      <section id="contact">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
 
         
         <h2 class="section-heading">Связаться с нами</h2>
-        
-
-        
+         
         <h3 class="section-subheading text-muted">.</h3>
         
 
@@ -533,9 +530,7 @@
     </div>
     <div class="row">
       <div class="col-lg-12">
-        
-        <form  action="https://formspree.io/orr-nn@mail.ru" method="POST" name="sentMessage" id="contactForm">
-        
+        <form id="contactForm" action="https://www.tectite.com/hosted/004494/ooods.ru/formmail.php" method="post" enctype="multipart/form-data">
 
           <fieldset>
             <div class="row">
@@ -543,53 +538,76 @@
 
                 
                 <div class="form-group">
-                  <input class="form-control" id="name" required="required" type="text" name="name" placeholder="Ваше имя *" data-validation-error-msg="Представьтесь, пожалуйста.">
-                  <p class="help-block text-danger"></p>
+                  <input type="text" id="name" name="name" class="form-control" placeholder="Ваше имя"
+                  />
                 </div>
-                
-
-                
+                 
                 <div class="form-group">
-                  <input class="form-control" id="email" required="required" type="email" name="email" placeholder="Email *" data-validation-error-msg="Адрес электронной почты.">
-                  <p class="help-block text-danger"></p>
+                  <input type="text" id="email" name="e_mail" class="form-control" placeholder="Email *"
+                  />
                 </div>
-                
-
-                
+                 
                 <div class="form-group">
-                  <input class="form-control" id="phone" required="required" type="number" name="phone" placeholder="Телефон *" data-validation-error-msg="Ваш номер телефона."></textarea>
-                  <p class="help-block text-danger"></p>
+                  <input type="text" id="phone" name="phone" class="form-control" placeholder="Телефон"
+                  />
                 </div>
                 
               </div>
-
               <div class="col-md-6">
-              
+                
                 <div class="form-group">
-                  <textarea class="form-control" id="message" required="required" name="message" placeholder="Сообщение *" data-validation-error-msg="Ваше сообщение."></textarea>
-                  <p class="help-block text-danger"></p>
+                  <textarea id="message" name="message" class="form-control" placeholder="Сообщение *"></textarea>
                 </div>
                 
-
-              </div>
-              <div class="clearfix"></div>
-              <div class="col-lg-12 text-center">
-                <div class="text-success" id="success" style="display:none;">
-                  
-                    Спасибо, что написали нам.
-                  
-                </div>
-                <div class="text-danger" id="error" style="display:none;">
-                  
-                    По какой-то причине сообщение не отправилось. Напишите нам на <strong>orr-nn@mail.ru</strong>.
-                  
-                </div><br />
-                <button type="submit" value="Submit" class="btn btn-xl">Отправить</button>
               </div>
             </div>
-            
+
+            <div class="row">
+              <div class="col-md-4 text-right order-last">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text" id="btnGroupAddon2">
+                      <a href="https://www.tectite.com/" target="_blank">
+                        <img src="/img/logos/formmail.svg" id="formmail" alt="Badge for Tectite supplied contact form" title="Use Tectite FormMail for your FormMail"
+                          border="0" />
+                      </a>
+                    </div>
+                  </div>
+                  <input type="submit" class="form-control btn btn-xl" placeholder="Input group example" value="Отправить">
+                </div>
+              </div>
+              <div class="col-md-8">
+                <span class="TectiteAjaxProgress"></span>
+              </div>
+            </div>
           </fieldset>
+          <input type="hidden" id="tectiteformid" name="tectiteformid" value="bf8606f0843a6c9ba2f764c6b15c4d5f" />
+          
+          <a id="PoweredByLink" class="PoweredByFormMail" href="https://www.tectite.com/" target="_blank">
+            <img id="PoweredByImg" src="https://www.tectite.com/images/FormMail_rnd_blue.png" alt="Badge for Tectite supplied contact form"
+              title="Use Tectite FormMail for your FormMail" border="0" />
+          </a>
+          <input type="hidden" name="required" value="message:Сообщение,e_mail:E-mail" />
+          <input type="hidden" name="derive_fields" value="realname = ,email = " />
+          <input type="hidden" name="subject" value="New Form Submission" />
+          <input type="hidden" name="good_url" value="" />
+          <input type="hidden" name="fmmode" value="auto" />
+          <input type="hidden" name="tectite_nojs" value="1" />
         </form>
+
+        
+        <div id="TectiteLink" style="clear:both;width:80%;margin:5px auto;text-align:center;">Visit Tectite for free
+          <a href="https://www.tectite.com/">php form</a> solutions.
+          <script type="text/javascript">
+            if (document.getElementById("PoweredByLink"))
+              document.getElementById("TectiteLink").setAttribute("style", "display:none;");
+          </script>
+        </div>
+        <script type="text/javascript" src="https://cdn.tectite.com/formtest-v2.js"></script>
+
+        
+
+
       </div>
     </div>
   </div>
@@ -668,17 +686,18 @@
 <script src="//npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
 <script src="/js/bootstrap/bootstrap.min.js"></script>
 
-<!-- Form Validation -->
-<script src="/js/jquery.form-validator-v2.3.44/jquery.form-validator.min.js"></script>
-
 <!-- Custom Theme -->
-<script src="/js/agency.js"></script>
+<script src="/js/ooods.min.js"></script>
 
 
 
 
 
 
+
+<!-- Form Validation -->
+<script type="text/javascript">var tectite_form_environ = {img_url:"http://cdn.tectite.com/images/"};</script>
+<script type="text/javascript" src="/js/tectite/formval-v12.min.js"></script>
 
   </body>
 </html>
