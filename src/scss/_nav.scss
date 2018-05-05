@@ -158,8 +158,8 @@ header#main-header,
 }
 
 header#main-header {
-    min-height: 80vh;
-    height: 80vh;
+    min-height: 70vh;
+    height: 70vh;
     color: #fff;
     background-attachment: fixed;
     background-image: url(../img/header-bg.jpg);
@@ -170,20 +170,14 @@ header#main-header {
     background-size: cover;
     -o-background-size: cover;
     box-shadow: 0 -25px 25px -25px #300 inset;
-    @media screen and (max-height: 768px) {
-        min-height: 80vh;
-        height: 80vh;
-    }
-    @media screen and (max-height: 568px) {
+    @media screen and (max-height: 920px) {
         min-height: 100vh;
         height: 100vh;
     }
-    @media screen and (max-height: 368px) {
-        min-height: 30em;
+    @media screen and (max-height: 600px) {
+        min-height: 40em;
     }
     @include media-breakpoint-up(sm) {
-        min-height: 70vh;
-        height: 70vh;
         .intro-text {
             .intro-lead-in {
                 font-size: 1.4rem;
@@ -194,8 +188,6 @@ header#main-header {
         }
     }
     @include media-breakpoint-up(md) {
-        min-height: 60vh;
-        height: 60vh;
         .intro-text {
             .intro-lead-in {
                 font-size: 1.6rem;
