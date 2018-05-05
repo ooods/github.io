@@ -1,4 +1,3 @@
-{{ "<!-- Contact Section -->" | safeHTML }}
 <section id="contact">
   <div class="container">
     <div class="row">
@@ -6,9 +5,7 @@
 
         {{ with .Site.Params.contact.title }}
         <h2 class="section-heading">{{ . | markdownify }}</h2>
-        {{ end }}
-
-        {{ with .Site.Params.contact.subtitle }}
+        {{ end }} {{ with .Site.Params.contact.subtitle }}
         <h3 class="section-subheading text-muted">{{ . | markdownify }}</h3>
         {{ end }}
 
@@ -16,11 +13,7 @@
     </div>
     <div class="row">
       <div class="col-lg-12">
-        {{ if not .Site.Params.contact.postURL }}
-        <form  action="https://formspree.io/{{ with (or .Site.Params.legal.email .Site.Params.email)}}{{.}}{{ end }}" method="POST" name="sentMessage" id="contactForm">
-        {{ else }}
-        <form  action="{{ .Site.Params.contact.postURL }}" method="POST" name="sentMessage" id="contactForm">
-        {{ end }}
+        <form id="contactForm" action="https://www.tectite.com/hosted/004494/ooods.ru/formmail.php" method="post" enctype="multipart/form-data">
 
           <fieldset>
             <div class="row">
@@ -28,65 +21,104 @@
 
                 {{ with .Site.Params.contact.form.name }}
                 <div class="form-group">
-                  <input class="form-control" id="name" required="required" type="text" name="name" placeholder="{{ with .text }}{{ .  | markdownify }}{{ end }}" data-validation-error-msg="{{ with .warning }}{{ . | markdownify }}{{ end }}">
-                  <p class="help-block text-danger"></p>
+                  <input type="text" id="name" name="name" class="form-control" placeholder="{{ with .text }}{{ .  | markdownify }}{{ end }}"
+                  />
                 </div>
-                {{ end }}
-
-                {{ with .Site.Params.contact.form.email }}
+                {{ end }} {{ with .Site.Params.contact.form.email }}
                 <div class="form-group">
-                  <input class="form-control" id="email" required="required" type="email" name="email" placeholder="{{ with .text }}{{ . | markdownify }}{{ end }}" data-validation-error-msg="{{ with .warning }}{{ . | markdownify }}{{ end }}">
-                  <p class="help-block text-danger"></p>
+                  <input type="text" id="email" name="e_mail" class="form-control" placeholder="{{ with .text }}{{ .  | markdownify }}{{ end }}"
+                  />
                 </div>
-                {{ end }}
-
-                {{ with .Site.Params.contact.form.phone }}
+                {{ end }} {{ with .Site.Params.contact.form.phone }}
                 <div class="form-group">
-                  <input class="form-control" id="phone" required="required" type="number" name="phone" placeholder="{{ with .text }}{{ . | markdownify }}{{ end }}" data-validation-error-msg="{{ with .warning }}{{ . | markdownify }}{{ end }}"></textarea>
-                  <p class="help-block text-danger"></p>
+                  <input type="text" id="phone" name="phone" class="form-control" placeholder="{{ with .text }}{{ .  | markdownify }}{{ end }}"
+                  />
                 </div>
                 {{ end }}
               </div>
-
               <div class="col-md-6">
-              {{ with .Site.Params.contact.form.message }}
+                {{ with .Site.Params.contact.form.message }}
                 <div class="form-group">
-                  <textarea class="form-control" id="message" required="required" name="message" placeholder="{{ with .text }}{{ . | markdownify }}{{ end }}" data-validation-error-msg="{{ with .warning }}{{ . | markdownify }}{{ end }}"></textarea>
-                  <p class="help-block text-danger"></p>
+                  <textarea id="message" name="message" class="form-control" placeholder="{{ with .text }}{{ .  | markdownify }}{{ end }}"></textarea>
                 </div>
                 {{ end }}
-
-              </div>
-              <div class="clearfix"></div>
-              <div class="col-lg-12 text-center">
-                <div class="text-success" id="success" style="display:none;">
-                  {{ with .Site.Params.contact.thanks }}
-                    {{ . | markdownify }}
-                  {{ else }}
-                    Спасибо, что написали нам.
-                  {{ end }}
-                </div>
-                <div class="text-danger" id="error" style="display:none;">
-                  {{ with .Site.Params.contact.error }}
-                    {{ . | markdownify }}
-                  {{ else }}
-                    По какой-то причине сообщение не отправилось. Напишите нам на <strong>{{ (or .Site.Params.legal.email .Site.Params.email) }}</strong>.
-                  {{ end }}
-                </div><br />
-                <button type="submit" value="Submit" class="btn btn-xl">{{ with .Site.Params.contact.buttonText }}{{ . }}{{ end }}</button>
               </div>
             </div>
-            {{ range .Site.Params.contact.form.hidden }}
-              {{ if eq .name "site" }}
-                <input type="hidden" name="{{ .name }}" value="{{ $.Permalink }}"/>
-              {{ else if eq .name "page" }}
-                <input type="hidden" name="{{ .name }}" value="{{ $.URL }}"/>
-              {{ else }}
-                <input type="hidden" name="{{ .name }}" value="{{ .value }}"/>
-              {{ end }}
-            {{ end }}
+
+            <div class="row">
+              <div class="col-md-4 text-right order-last">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text" id="btnGroupAddon2">
+                      <a href="https://www.tectite.com/" target="_blank">
+                        <img src="{{ 'img/logos/formmail.svg' | absURL }}" id="formmail" alt="Badge for Tectite supplied contact form" title="Use Tectite FormMail for your FormMail"
+                          border="0" />
+                      </a>
+                    </div>
+                  </div>
+                  <input type="submit" class="form-control btn btn-xl" placeholder="Input group example" value="{{ with .Site.Params.contact.buttonText }}{{ . }}{{ end }}">
+                </div>
+              </div>
+              <div class="col-md-8">
+                <span class="TectiteAjaxProgress"></span>
+              </div>
+            </div>
           </fieldset>
+          <input type="hidden" id="tectiteformid" name="tectiteformid" value="bf8606f0843a6c9ba2f764c6b15c4d5f" />
+          <!-- NOTE: do not remove the following links if you are using our Hosted Forms on a Free Plan.
+               Removing the links will cause your form to be disabled! You can upgrade to a paid plan
+               and then safely remove the links.
+               If you are using your own copy of FormMail, you can remove the links without an issue,
+               though we would appreciate it if you left them here.
+          -->
+          <a id="PoweredByLink" class="PoweredByFormMail" href="https://www.tectite.com/" target="_blank">
+            <img id="PoweredByImg" src="https://www.tectite.com/images/FormMail_rnd_blue.png" alt="Badge for Tectite supplied contact form"
+              title="Use Tectite FormMail for your FormMail" border="0" />
+          </a>
+          <input type="hidden" name="required" value="message:Сообщение,e_mail:E-mail" />
+          <input type="hidden" name="derive_fields" value="realname = ,email = " />
+          <input type="hidden" name="subject" value="New Form Submission" />
+          <input type="hidden" name="good_url" value="" />
+          <input type="hidden" name="fmmode" value="auto" />
+          <input type="hidden" name="tectite_nojs" value="1" />
         </form>
+
+        <!-- NOTE: do not remove the following links if you are using our Hosted Forms on a Free Plan.
+               Removing the links will cause your form to be disabled! You can upgrade to a paid plan
+               and then safely remove the links.
+               If you are using your own copy of FormMail, you can remove the links without an issue,
+               though we would appreciate it if you left them here.
+          -->
+        <div id="TectiteLink" style="clear:both;width:80%;margin:5px auto;text-align:center;">Visit Tectite for free
+          <a href="https://www.tectite.com/">php form</a> solutions.
+          <script type="text/javascript">
+            if (document.getElementById("PoweredByLink"))
+              document.getElementById("TectiteLink").setAttribute("style", "display:none;");
+          </script>
+        </div>
+        <script type="text/javascript" src="https://cdn.tectite.com/formtest-v2.js"></script>
+
+        <!--
+          You can modify this form in the future by
+          using the Form Designer at http://www.tectite.com/
+          
+        *** Tectite Form Designer Start ***
+        5:C:e8748403ac873b4e1a3c3eea334bf408:eJzdlt1q2zAUgPsoQ5e78n8S+Wos6yiUBJq1t0G
+        O5VbDjlPLXtcFwyi72GAw2AMMtifoBoHC1u4V5DfakWw3bpc02Wgp9E46f5K+c6SjPm5jtBknUZe
+        kBMFkyrGuY7TxeGNINhkNfY5cgh08ZVhz+7hTWisNwroh7TulOe+RiCKXYwujcTWsVS+OJ7Uqpa9
+        TOdS1SrdNPBoqiY2R+CxOi/di9kiciV/Fp1o8Nxykx6EKBe5Ka1Sb7U9SFo/VbjU8zS/XjgbsDTj
+        0mkvukTC7EsQsFd4OPcxYQn3kenDcRvSnIeGcNqJfxrq+oVYl3+rKmYNRIFnpcmJIH4lvK6XRxpD
+        tjtlhRqWhhJszrK9JGKLSYURY+M+MgeWz2vG+wOq3CdZeBdaWYI01wQKRyUE8/o/aBa34Jmbip5g
+        V78SFOH8wpWutImxJwuaahGGNiHJO9hcybpeMSULJEs5gIb4C3wvxvfgAvM/hoZjdHmuC1a4hm0l
+        8xJUnRlaV/lEcKhHEMjTk5vda+OaqtJgyLdb6LwrPvIili7JyRbkkJ1+KE/G7eCtOxQ9xVpwUHx9
+        C/c9PfRNoXYK21wQt95vSUcpSGoAt85cAP2C+T8eLgddHv0O6Jnh7QdvRnEBrWyZxRh2PGEHLsUa
+        Op9sjy7eDu8W/ENRNaXDcPP+bN0Tp0SMVsP7WdGnCXtV3XXZeAlZqoB4geHvC8v/C1I2VH6QsDHu
+        VyFAXWTXrhh+kgpZ9tXTqVH32ie8nDa98DoYPMu8lnK/KQC19Hsf+7s72ggpnUgXJ5OV3oQFD/t2
+        uwWg1HfsJ29+jCa/a4R/Xj+Y2:824
+        *** Tectite Form Designer End ***
+          -->
+
+
       </div>
     </div>
   </div>

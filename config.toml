@@ -72,10 +72,10 @@ warning = "Адрес электронной почты."
 text = "Сообщение *"
 warning = "Ваше сообщение."
 [params.contact.form.name]
-text = "Ваше имя *"
+text = "Ваше имя"
 warning = "Представьтесь, пожалуйста."
 [params.contact.form.phone]
-text = "Телефон *"
+text = "Телефон"
 warning = "Ваш номер телефона."
 [params.error404]
 heading = "Страница не найдена"

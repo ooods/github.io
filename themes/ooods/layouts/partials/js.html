@@ -5,11 +5,8 @@
 <script src="//npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
 <script src="{{ "js/bootstrap/bootstrap.min.js"| absURL }}"></script>
 
-{{ "<!-- Form Validation -->" | safeHTML }}
-<script src="{{ "js/jquery.form-validator-v2.3.44/jquery.form-validator.min.js"| absURL }}"></script>
-
 {{ "<!-- Custom Theme -->" | safeHTML }}
-<script src="{{ "js/agency.js"| absURL }}"></script>
+<script src="{{ "js/ooods.min.js"| absURL }}"></script>
 
 {{ template "_internal/google_analytics_async.html" . }}
 
@@ -20,3 +17,7 @@
 {{ range .Site.Params.custom_js }}
   <script src="{{ . | absURL }}"></script>
 {{ end }}
+
+{{ "<!-- Form Validation -->" | safeHTML }}
+<script type="text/javascript">var tectite_form_environ = {img_url:"http://cdn.tectite.com/images/"};</script>
+<script type="text/javascript" src="{{ "js/tectite/formval-v12.min.js"| absURL }}"></script>
