@@ -6,19 +6,10 @@
     <description>Recent content in Portfolios on «Деловое сотрудничество», продюсерский центр</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
-    <lastBuildDate>Sun, 06 May 2018 19:16:11 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 06 May 2018 02:00:00 +0300</lastBuildDate>
     
 	<atom:link href="/portfolio/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Elämän arteet (Жизненные ценности)</title>
-      <link>/portfolio/portfolio-elaman-arteet/</link>
-      <pubDate>Sun, 06 May 2018 19:16:11 +0300</pubDate>
-      
-      <guid>/portfolio/portfolio-elaman-arteet/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>TM «Белоручка»</title>
@@ -27,6 +18,15 @@
       
       <guid>/portfolio/portfolio-beloruchka/</guid>
       <description>…</description>
+    </item>
+    
+    <item>
+      <title>Elämän arteet (Жизненные ценности)</title>
+      <link>/portfolio/portfolio-elaman-arteet/</link>
+      <pubDate>Sun, 06 May 2018 01:16:11 +0300</pubDate>
+      
+      <guid>/portfolio/portfolio-elaman-arteet/</guid>
+      <description></description>
     </item>
     
   </channel>
