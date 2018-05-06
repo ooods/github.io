@@ -1,5 +1,6 @@
 ---
 pages:
+- services-advertising.md
 - services-tv.md
 hide_body: false
 is_partial: false
