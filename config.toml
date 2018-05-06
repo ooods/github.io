@@ -136,32 +136,32 @@ title = "Услуги"
 description = "Производство видеофильмов, Производство видеосъемок и монтаж видео, Производство видео для Интернет сайтов"
 icon = "fa-video"
 title = "Видео"
-url = "services-video"
+url = "services/video"
 [[params.services.row.list]]
 description = "Производство ТВ-программ, Производство ТВ-сюжетов, Производство ТВ-рекламы."
 icon = "fa-tv"
 title = "ТВ"
-url = "services-tv"
+url = "services/tv"
 [[params.services.row.list]]
 description = "Производство видео для Интернет сайтов, Создание и ведение Интернет-сайтов, СММ, СЕО"
 icon = "fa-globe"
 title = "Веб услуги"
-url = "services-web"
+url = "services/web"
 [[params.services.row.list]]
 description = "Разработка логотипов. Создание и предпечатная подготовка графики"
 icon = "fa-eye"
 title = "Дизайн"
-url = "services-design"
+url = "services/design"
 [[params.services.row.list]]
 description = "Проведение комплексных рекламных кампаний."
 icon = "fa-chart-line"
 title = "Реклама"
-url = "services-advertising"
+url = "services/advertising"
 [[params.services.row.list]]
 description = "Репутационный и электоральный консалтинг."
 icon = "fa-users"
 title = "Консалтинг"
-url = "services-consulting"
+url = "services/consulting"
 [params.team]
 center = true
 description = "."
