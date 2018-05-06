@@ -24,11 +24,6 @@ fields:
   type: text
   hidden: true
   default: portfolio
-- name: description
-  label: "Описание"
-  type: text
-  hidden: false
-  default: "."
 - type: image_gallery
   name: img-preview
   label: "Изображение для главной"
