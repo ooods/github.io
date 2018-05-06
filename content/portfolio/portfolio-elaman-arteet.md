@@ -2,7 +2,7 @@
 category = "Дизайн"
 client = "Хуан Карлос Гузман-Моне"
 clientLink = "#"
-date = "2018-05-06T19:16:11+03:00"
+date = "2018-05-06T01:16:11+03:00"
 description = ""
 img = ["/uploads/2018/01/22/elaman_aarteet.png"]
 img-preview = []
