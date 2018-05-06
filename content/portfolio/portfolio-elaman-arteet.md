@@ -9,6 +9,7 @@ img = []
 img-preview = []
 subtitle = ""
 title = "Elämän arteet (Жизненные ценности)"
+type = "portfolio!"
 youtube = ""
 
 +++
