@@ -1,0 +1,33 @@
+---
+pages:
+- services-web.md
+- services-video.md
+- services-design.md
+- services-consulting.md
+- services-advertising.md
+- services-tv.md
+hide_body: false
+is_partial: false
+fields:
+- name: title
+  label: "Заголовок"
+  type: text
+  hidden: false
+  default: ''
+  config:
+    required: true
+- name: date
+  label: "Дата"
+  type: datetime
+  hidden: true
+  default: Invalid date
+  config:
+    date_format: DD.MM.YYYY
+    required: false
+- name: type
+  label: "Тип"
+  type: text
+  hidden: true
+  default: page
+  config:
+    required: true
