@@ -60,9 +60,9 @@ fields:
   name: category
   label: "Категория"
   default: "Видео"
-- type: text
+- type: datetime
   name: date
   label: Date
-  default: ''
   config:
     required: true
+    date_format: DD.MM.YYYY
