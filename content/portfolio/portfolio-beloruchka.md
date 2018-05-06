@@ -1,6 +1,5 @@
 ---
 title: "---"
 date: 2018-05-06 11:25:02 +0300
-type: portfolio
 
 ---
