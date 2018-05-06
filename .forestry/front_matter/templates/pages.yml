@@ -1,11 +1,11 @@
 ---
 pages:
-- services-tv.md
-- services-advertising.md
-- services-consulting.md
-- services-design.md
-- services-video.md
 - services-web.md
+- services-video.md
+- services-design.md
+- services-consulting.md
+- services-advertising.md
+- services-tv.md
 hide_body: false
 is_partial: false
 fields:
