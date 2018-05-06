@@ -19,7 +19,7 @@ fields:
 - name: date
   label: "Дата"
   type: datetime
-  hidden: false
+  hidden: true
   default: Invalid date
   config:
     date_format: DD.MM.YYYY
