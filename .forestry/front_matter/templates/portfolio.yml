@@ -14,11 +14,6 @@ fields:
   type: text
   hidden: false
   default: ''
-- name: date
-  label: Date
-  type: datetime
-  hidden: false
-  default: Invalid date
 - name: type
   label: Type
   type: text
@@ -65,3 +60,9 @@ fields:
   name: category
   label: "Категория"
   default: "Видео"
+- type: text
+  name: date
+  label: Date
+  default: ''
+  config:
+    required: true
