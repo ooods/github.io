@@ -14,13 +14,6 @@ fields:
   type: text
   hidden: false
   default: ''
-- name: type
-  label: Type
-  type: text
-  hidden: false
-  default: portfolio
-  config:
-    required: true
 - type: image_gallery
   name: img-preview
   label: "Изображение для главной"
@@ -60,6 +53,14 @@ fields:
   name: category
   label: "Категория"
   default: "Видео"
+- name: type
+  label: Type
+  type: text
+  hidden: false
+  default: portfolio
+  config:
+    required: true
+  description: "Не менять!"
 - type: datetime
   name: date
   label: Date
