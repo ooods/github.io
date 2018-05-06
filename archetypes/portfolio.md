@@ -8,3 +8,4 @@ img-preview:
 client: 
 clientLink: 
 category: 
+type: portfolio
