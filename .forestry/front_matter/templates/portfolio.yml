@@ -24,6 +24,8 @@ fields:
   type: text
   hidden: true
   default: portfolio
+  config:
+    required: true
 - type: image_gallery
   name: img-preview
   label: "Изображение для главной"
