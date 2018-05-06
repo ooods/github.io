@@ -17,12 +17,12 @@ fields:
 - name: date
   label: Date
   type: datetime
-  hidden: true
+  hidden: false
   default: Invalid date
 - name: type
   label: Type
   type: text
-  hidden: true
+  hidden: false
   default: portfolio
   config:
     required: true
