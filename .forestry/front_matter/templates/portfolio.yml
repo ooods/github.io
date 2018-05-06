@@ -28,7 +28,7 @@ fields:
   label: "Описание"
   type: text
   hidden: false
-  default: ''
+  default: "."
 - type: image_gallery
   name: img-preview
   label: "Изображение для главной"
@@ -67,3 +67,4 @@ fields:
     - "Консалтинг"
   name: category
   label: "Категория"
+  default: "Видео"
