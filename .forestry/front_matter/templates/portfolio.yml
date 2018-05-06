@@ -15,7 +15,7 @@ fields:
   hidden: false
   default: ''
 - type: image_gallery
-  name: img-preview
+  name: imgpreview
   label: "Изображение для главной"
   description: "буедт видно на главной странице"
 - type: image_gallery

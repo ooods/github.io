@@ -1,3 +1,4 @@
+@import "_variables";
 @import "./../../node_modules/bootstrap/scss/_mixins";
 section#portfolio {
     img.img-responsive {
@@ -136,6 +137,21 @@ section#portfolio {
     .modal-backdrop {
         display: none;
         opacity: 0;
+    }
+    .youtube-placeholder {
+        background: $color-youtube-background;
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+        &>iframe {
+            position: absolute;
+            top: 2em;
+            left: 2em;
+            width: calc(100% - 4em);
+            height: calc(100% - 4em);
+        }
     }
 }
 

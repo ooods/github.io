@@ -8,23 +8,40 @@
     </div>
     <div class="row">
 
-      {{ range .Site.Data.projects }}
+    {{ range where $.Site.RegularPages ".Section" "in" "portfolio" }}
+      {{ $path := .File.Path }}
+      {{ with .Params }}
+        {{ $params := . }}
+        
+        {{ range first 1 .imgpreview }}
+          {{ $.Scratch.Set "imgpreview" . }}
+        {{ end }}
+        {{ range first 1 .img }}
+          {{ $.Scratch.Set "img" . }}
+        {{ end }}
+
+        {{ $imgpreview := $.Scratch.Get "imgpreview" }}
+        {{ $img := $.Scratch.Get "img" }}
+
+        {{ if $imgpreview }}
       <div class="col-md-4 col-sm-6 portfolio-item">
-        <a href="#portfolioModal{{ .img | replaceRE "([^a-zA-Z])" "" }}" class="portfolio-link" data-toggle="modal">
+        <a href="#portfolioModal{{ $path | replaceRE "([^a-zA-Z])" "" }}" class="portfolio-link" data-toggle="modal">
           <div class="portfolio-hover">
             <div class="portfolio-hover-content">
               <i class="fa fa-plus fa-3x"></i>
             </div>
           </div>
-          {{ $url := printf "%s" .preview }}
-          <img src="{{ $url | absURL }}" class="img-responsive" alt="{{ .title | markdownify }}">
+          <img src="{{ $imgpreview | absURL }}" class="img-responsive" alt="{{ .title | markdownify }}">
         </a>
         <div class="portfolio-caption">
           <h4>{{ .client | markdownify }}</h4>
           <p class="text-muted">{{ .category | markdownify }}</p>
         </div>
       </div>
+        {{ end }}
+        
       {{ end }}
+    {{ end }}
 
     </div>
   </div>
