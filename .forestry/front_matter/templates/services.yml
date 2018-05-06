@@ -3,17 +3,23 @@ hide_body: false
 is_partial: false
 fields:
 - name: title
-  label: Title
+  label: "Заголовок"
   type: text
   hidden: false
   default: 
-- name: date
+  config:
+    required: true
+- type: datetime
+  default: Invalid date
   label: Date
-  type: text
-  hidden: false
-  default: 
+  name: date
+  hidden: true
+  config:
+    required: false
 - name: type
   label: Type
   type: text
-  hidden: false
+  hidden: true
   default: page
+  config:
+    required: true
