@@ -10,6 +10,7 @@
 
     {{ range where $.Site.RegularPages ".Section" "in" "portfolio" }}
       {{ $path := .File.Path }}
+      {{ $.Scratch.Set "imgpreview" "" }}
       {{ with .Params }}
         {{ $params := . }}
         

@@ -1,5 +1,6 @@
 {{ "<!-- Portfolio Modals -->" | safeHTML }}
 {{ range where $.Site.RegularPages ".Section" "in" "portfolio" }}
+  {{ $.Scratch.Set "img" "" }}
   {{ $section := . }}
   {{ $path := .File.Path }}
   {{ with .Params }}
