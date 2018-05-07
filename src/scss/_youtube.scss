@@ -1,0 +1,26 @@
+.youtube-container {
+    .youtube-placeholder {
+        background: $color-youtube-background;
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+        margin-bottom: 2em;
+        &>iframe {
+            position: absolute;
+            top: 2em;
+            left: 2em;
+            width: calc(100% - 4em);
+            height: calc(100% - 4em);
+        }
+    }
+    h6 {
+        display: inline-block;
+        background: $color-youtube-background;
+        margin-bottom: 0;
+        padding: .5em 2em;
+        border-top-left-radius: .5em;
+        border-top-right-radius: .5em;
+    }
+}

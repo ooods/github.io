@@ -4,11 +4,4 @@ section.single-page-container {
     .container img {
         @include img-fluid;
     }
-    h6 {
-        margin-top: 2.5rem;
-        /* Youtube video */
-        &+div {
-            margin-bottom: 2.5em;
-        }
-    }
 }

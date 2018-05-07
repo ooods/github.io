@@ -1,0 +1,11 @@
+<div class="youtube-container">
+    {{ if isset .Params 1 }}
+        {{ $header := .Get 1 }}
+        {{ if $header }}
+    <h6>{{ $header }}</h6>
+        {{ end }}
+    {{ end }}
+    <div class="youtube-placeholder">
+        <iframe src="//www.youtube.com/embed/{{ .Get 0 }}" allowfullscreen frameborder="0" title="YouTube Video"></iframe>
+    </div>
+</div>
