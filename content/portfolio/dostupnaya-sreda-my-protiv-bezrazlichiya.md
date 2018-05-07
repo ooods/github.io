@@ -1,13 +1,15 @@
 +++
-category = "Видео"
-client = ""
+category = "Реклама"
+client = "Правительство Нижегородской области"
 clientLink = "#"
 date = "2018-05-07T11:08:20+03:00"
 description = ""
 draft = true
-img = ""
-imgpreview = ""
-subtitle = ""
+img = []
+imgpreview = ["/uploads/2018/05/07/dostupnaya-sreda-my-protiv-bezrazlichiya.preview.jpeg"]
+subtitle = "Социальная реклама"
 title = "«Доступная среда. Мы против безразличия»"
+youtube = "3OAQ8N8PTjI"
 
 +++
+Доступная среда для людей с ограниченными возможностями. Телевизионная социальная реклама.  
