@@ -16,17 +16,11 @@ type: page
 
 Некоторые наши работы дадут вам представления о наших возможностях.
 
-###### Сбербанк, видеопрезентация
+{{< youtube BQicEewjt_8 "Сбербанк, видеопрезентация" >}}
 
-{{< youtube BQicEewjt_8 >}}
+{{< youtube tMXK3cPewqk "ТМ «Колибри»" >}}
 
-###### ТМ «Колибри»
-
-{{< youtube tMXK3cPewqk >}}
-
-###### ТМ «Белоручка»
-
-{{< youtube eSH1Ed74GeY >}}
+{{< youtube eSH1Ed74GeY "ТМ «Белоручка»" >}}
 
 Ещё больше работ на нашем [youtube-канале](https://www.youtube.com/user/OOODS2013/videos "Youtube-канал ООО «Деловое сотрудничество»").
 
