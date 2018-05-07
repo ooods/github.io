@@ -1,6 +1,6 @@
 +++
 category = "Видео"
-client = ""
+client = "Фильм заказан друзьями юбиляра к 70-летию"
 clientLink = "#"
 date = "2018-05-07T19:25:20+03:00"
 description = ""
