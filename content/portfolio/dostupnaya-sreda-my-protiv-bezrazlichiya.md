@@ -4,7 +4,6 @@ client = "Правительство Нижегородской области"
 clientLink = "#"
 date = "2018-05-07T11:08:20+03:00"
 description = ""
-draft = true
 img = []
 imgpreview = ["/uploads/2018/05/07/dostupnaya-sreda-my-protiv-bezrazlichiya.preview.jpeg"]
 subtitle = "Социальная реклама"
