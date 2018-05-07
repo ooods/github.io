@@ -27,8 +27,10 @@
         </div>
         {{ end }}
         {{ if .youtube }}
-        <div class="youtube-placeholder">
-          <iframe src="//www.youtube.com/embed/{{ .youtube }}" allowfullscreen frameborder="0" title="YouTube Video"></iframe>
+        <div class="youtube-container">
+          <div class="youtube-placeholder">
+            <iframe src="//www.youtube.com/embed/{{ .youtube }}" allowfullscreen frameborder="0" title="YouTube Video"></iframe>
+          </div>
         </div>
         {{ end }}
         <p>
