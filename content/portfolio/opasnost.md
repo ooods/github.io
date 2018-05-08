@@ -1,13 +1,13 @@
 +++
 category = "Видео"
-client = ""
+client = "Министерство образования Нижегородской области"
 clientLink = "#"
-date = "2018-05-08T20:02:41+03:00"
+date = "Invalid date"
 description = ""
-draft = true
-img = ""
-imgpreview = ""
-subtitle = ""
+img = []
+imgpreview = ["/uploads/2018/05/08/hqdefault.jpg"]
+subtitle = "фильм для родителей"
 title = "Опасность"
+youtube = "7iL4-Iswyd4"
 
 +++
