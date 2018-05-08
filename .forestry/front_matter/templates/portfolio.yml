@@ -17,7 +17,7 @@ fields:
 - type: image_gallery
   name: imgpreview
   label: "Изображение для главной"
-  description: "буедт видно на главной странице"
+  description: "будет видно на главной странице"
 - type: image_gallery
   name: img
   label: "Основное изображение"
