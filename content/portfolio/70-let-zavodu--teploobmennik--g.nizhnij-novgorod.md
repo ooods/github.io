@@ -4,7 +4,6 @@ client = "Завод \"Теплообменник\" г. Нижний Новго�
 clientLink = "#"
 date = "2018-05-08T09:56:50+03:00"
 description = ""
-draft = true
 img = ["/uploads/2018/05/08/teploobmennik-1.jpg"]
 imgpreview = ["/uploads/2018/05/08/teploobmennik.jpg"]
 subtitle = ""
