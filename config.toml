@@ -122,6 +122,8 @@ services = "Услуги"
 enable = true
 subtitle = "."
 title = "Портфолио"
+youtubelink = "Ещё больше видео на канале ПЦ&nbsp;«Деловое сотрудничество» на&nbsp;<a href=\"https://www.youtube.com/channel/UCjUoy8cPMUboy4A5U1V3GLQ\" target=\"_blank\">Youtube</a>"
+youtubetitle = "канал ПЦ «Деловое сотрудничество» на Youtube"
 [params.portfolio.modal]
 buttontext = "Закрыть проект"
 category = "Категоря"

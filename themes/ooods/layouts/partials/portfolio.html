@@ -44,6 +44,20 @@
       {{ end }}
     {{ end }}
 
+      <div class="col-md-4 col-sm-6 portfolio-item last">
+        <a href="https://www.youtube.com/channel/UCjUoy8cPMUboy4A5U1V3GLQ" class="portfolio-link" target="_blank">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fa fa-chevron-circle-right fa-3x"></i>
+            </div>
+          </div>
+          <img src="img/portfolio/ooods-at-youtube.png" class="img-responsive" alt="{{ with .Site.Params.portfolio.youtubetitle }}{{ . }}{{ end }}">
+        </a>
+        <div class="portfolio-caption">
+          <p>{{ with .Site.Params.portfolio.youtubelink }}{{ . | markdownify }}{{ end }}</p>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>

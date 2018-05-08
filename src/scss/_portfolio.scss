@@ -60,6 +60,10 @@ section#portfolio {
                 font-style: italic;
             }
         }
+        &.last {
+            border: 1px solid $color-text-disabled;
+            padding: .5em;
+        }
     }
     * {
         z-index: 2;
