@@ -21,7 +21,8 @@ fields:
 - type: image_gallery
   name: img
   label: "Основное изображение"
-  description: "будет выидно в открывшемся модальном окне"
+  description: "будет выидно в открывшемся модальном окне, если есть видео – то ставить
+    не обязательно"
 - type: text
   name: youtube
   label: "Ссылка на ютьюб"
