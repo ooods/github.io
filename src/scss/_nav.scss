@@ -29,6 +29,7 @@ nav.navbar {
         background-image: url(../img/header-bg.jpg);
         background-position: center -185px;
         background-color: $color-accent-main-desaturated;
+        background-repeat: no-repeat;
     }
     .navbar-brand {
         font-family: "PT Sans Narrow", sans-serif;
