@@ -49,3 +49,19 @@ $(document).ready(function () {
     $("ul.nav").toggleClass("hidden");
   });
 });
+
+// youtibe
+$(document).ready(function () {
+  var players = [];
+  $('.modal-content iframe').each((i, el) => {
+    players.push(
+      new YT.Player($(el).attr('id'))
+    )
+  });
+  const closers = $('[data-dismiss="modal"]');
+  closers.each((i, el) => {
+    $(el).bind('click', () => {
+      players.forEach(player => player.stopVideo());
+    });
+  });
+});

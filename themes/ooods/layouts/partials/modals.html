@@ -29,7 +29,7 @@
         {{ if .youtube }}
         <div class="youtube-container">
           <div class="youtube-placeholder">
-            <iframe src="//www.youtube.com/embed/{{ .youtube }}" allowfullscreen frameborder="0" title="YouTube Video"></iframe>
+            <iframe id="modalvideo{{ $path | replaceRE "([^a-zA-Z])" "" }}" src="//www.youtube.com/embed/{{ .youtube }}?enablejsapi=1" allowfullscreen frameborder="0" title="YouTube Video"></iframe>
           </div>
         </div>
         {{ end }}
@@ -39,7 +39,7 @@
         {{ end }}
         </p>
         <ul class="list-inline">
-          <li>{{ with $.Site.Params.portfolio.modal.date }}{{ . }}{{ end }}: {{ dateFormat "02.01.2006" .date }}</li>
+          <!-- <li>{{ with $.Site.Params.portfolio.modal.date }}{{ . }}{{ end }}: {{ dateFormat "02.01.2006" .date }}</li> -->
           <li>{{ with $.Site.Params.portfolio.modal.client }}{{ . | markdownify }}{{ end }}: <a href="{{ .clientLink }}">{{ .client }}</a></li>
           <li>{{ with $.Site.Params.portfolio.modal.category }}{{ . }}{{ end }}: {{ .category  | markdownify }}</li>
         </ul>
