@@ -7,7 +7,7 @@ description = ""
 img = []
 imgpreview = ["/uploads/2018/05/08/teploobmennik.jpg"]
 subtitle = ""
-title = "70 лет заводу \"Теплообменник\" г.Нижний Новгород"
+title = "70 лет заводу \"Теплообменник\" г.&nbsp;Нижний Новгород"
 youtube = "QOcViIbJWIw"
 
 +++
