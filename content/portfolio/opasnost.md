@@ -4,6 +4,7 @@ client = "Министерство образования Нижегородск
 clientLink = "#"
 date = "Invalid date"
 description = ""
+draft = true
 img = []
 imgpreview = ["/uploads/2018/05/08/Screenshot_20180508-201407.png"]
 subtitle = "фильм для родителей"
