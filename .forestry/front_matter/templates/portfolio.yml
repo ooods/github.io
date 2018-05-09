@@ -3,57 +3,57 @@ hide_body: false
 is_partial: false
 fields:
 - name: title
-  label: "Заголовок"
+  label: Заголовок
   type: text
   hidden: false
   default: ''
   config:
     required: true
 - name: subtitle
-  label: "Подзаголовок"
+  label: Подзаголовок
   type: text
   hidden: false
   default: ''
 - type: image_gallery
   name: imgpreview
-  label: "Изображение для главной"
-  description: "будет видно на главной странице"
+  label: Изображение для главной
+  description: будет видно на главной странице
 - type: image_gallery
   name: img
-  label: "Основное изображение"
-  description: "будет выидно в открывшемся модальном окне, если есть видео – то ставить
-    не обязательно"
+  label: Основное изображение
+  description: будет выидно в открывшемся модальном окне, если есть видео – то ставить
+    не обязательно
 - type: text
   name: youtube
-  label: "Ссылка на ютьюб"
-  description: "Последняя часть ссылки на ютьюб, идентификатор видео"
+  label: Ссылка на ютьюб
+  description: Последняя часть ссылки на ютьюб, идентификатор видео
 - name: client
-  label: "Клиент"
+  label: Клиент
   type: text
   hidden: false
   default: ''
-  description: "Имя клиента, видно в модальном окне"
+  description: Имя клиента, видно в модальном окне
 - name: clientLink
-  label: "Ссылка на сайт или страницу клиента"
+  label: Ссылка на сайт или страницу клиента
   type: text
   hidden: false
   default: "#"
-  description: "Можно не заполнять пока нет страниц клиентов, видно в модальном окне"
+  description: Можно не заполнять пока нет страниц клиентов, видно в модальном окне
 - type: select
   config:
     source:
       type: simple
     required: true
     options:
-    - "Видео"
-    - "ТВ"
-    - "Веб услуги"
-    - "Дизайн"
-    - "Реклама"
-    - "Консалтинг"
+    - Видео
+    - ТВ
+    - Веб услуги
+    - Дизайн
+    - Реклама
+    - Консалтинг
   name: category
-  label: "Категория"
-  default: "Видео"
+  label: Категория
+  default: Видео
 - name: type
   label: Type
   type: text
@@ -61,7 +61,7 @@ fields:
   default: portfolio
   config:
     required: true
-  description: "Не менять!"
+  description: Не менять!
 - type: datetime
   name: date
   label: Date
