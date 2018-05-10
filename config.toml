@@ -126,7 +126,7 @@ youtubelink = "Ещё больше видео на канале ПЦ&nbsp;«Де
 youtubetitle = "канал ПЦ «Деловое сотрудничество» на Youtube"
 [params.portfolio.modal]
 buttontext = "Закрыть проект"
-category = "Категоря"
+category = "Категория"
 client = "Клиент"
 date = "Дата"
 [params.services]
