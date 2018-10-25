@@ -1,13 +1,14 @@
 +++
 category = "Видео"
-client = nil
+client = ""
 clientLink = "#"
 date = "2018-10-25T11:17:07+03:00"
 description = nil
 draft = true
-img = nil
-imgpreview = nil
-subtitle = nil
-title = "2stars"
+img = []
+imgpreview = ["/uploads/2018/10/25/2stars.PNG"]
+subtitle = ""
+title = "К звёздам"
+youtube = "M-tmF_qFCDI"
 
 +++
