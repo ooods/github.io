@@ -1,6 +1,6 @@
 +++
 category = "Видео"
-client = "."
+client = "Памяти Людмилы Поповой"
 clientLink = "#"
 date = "2018-10-25T11:17:07+03:00"
 description = ""
