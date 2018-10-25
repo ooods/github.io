@@ -25,9 +25,9 @@ fields:
   config:
     required: true
 pages:
+- content/services/tv.md
 - content/services/design.md
 - content/services/consulting.md
-- content/services/tv.md
 - content/services/advertising.md
 - content/services/web.md
 - content/services/video.md
