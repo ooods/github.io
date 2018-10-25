@@ -8,6 +8,6 @@ img = []
 imgpreview = ["/uploads/2018/10/25/Снимок экрана от 2018-10-17 09-30-49.png"]
 subtitle = "Памяти Людмилы Поповой"
 title = "К звёздам"
-youtube = "M-tmF_qFCDI"
+youtube = "watch?v=0BBiIl04vxo"
 
 +++
