@@ -71,7 +71,6 @@ fields:
     date_format: DD.MM.YYYY
 pages:
 - content/portfolio/2stars.md
-- content/portfolio/к-звездам-2.md
 - content/portfolio/dostupnaya-sreda-my-protiv-bezrazlichiya.md
 - content/portfolio/poehali.md
 - content/portfolio/vysshij-pilotazh.md
