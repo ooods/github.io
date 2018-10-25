@@ -69,6 +69,11 @@ fields:
   config:
     required: true
     date_format: DD.MM.YYYY
+- type: text
+  name: description
+  label: Description
+  description: " "
+  hidden: true
 pages:
 - content/portfolio/2stars.md
 - content/portfolio/dostupnaya-sreda-my-protiv-bezrazlichiya.md
